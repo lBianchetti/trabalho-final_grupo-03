@@ -1,0 +1,55 @@
+body {
+    margin-left: 60px;
+    background-color: #000;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+}
+
+ul {
+    margin-left: 1500px;
+}
+
+ul li {
+    color: #fff;
+    display: inline-block;
+}
+
+ul li a {
+    color: #fff;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+    margin: auto;
+}
+
+h3 {
+    color: #DDE316;
+}
+
+.imagem {
+    display: inline-block;
+}
+
+.data {
+    color: #DDE316;
+    margin-top: 0px;
+}
+
+#imagem1 {
+    width: 250px;
+}
+
+#imagem2 {
+    width: 657px;
+    margin-left: 10px;
+}

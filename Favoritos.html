@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favoritos</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<header>
     <header>
-        <nav>  
+        <nav>
             <img src="./img/Logo_FILMES!.svg" alt="logo-filmes">
             <ul>
                 <li><a href="./index.html">Início</a></li>
                 <li><a href="">Recomendações</a></li>
-                <li><a href="./Favoritos.html">Favoritos</a></li>
+                <li><a href="">Favoritos</a></li>
             </ul>
         </nav>
+        <h1>Meus Favoritos</h1>
+        <nav> <a href="">Criar Nova Lista</a> <a href="">Editar</a> <a href="">Compartilhar</a></nav>
+
+        <div class="ordem-dos-filmes">
+            <h3 class="ordem-dos-filmes_Titulo">Titulos </h3>
+            <form class="ordem-dos-filmes_Tabela" action="">
+                <label for="ordenarpor">Ordenar por:</label>
+                <select name="ordem" id="ordenarpor">
+                    <option value="">Alfabética</option>
+                    <option value="Lançamento">Lançamento</option>
+                    <option value="Popularidade">Popularidade</option>
+                </select>
+            </form>
+        </div>
     </header>
-<h2>Meus Favoritos</h2>
-<nav> <a href="">Criar Nova Lista</a>        <a href="">Editar</a> <a href="">Compartilhar</a></nav>
-</header>
-    a
+    <section class="Lista-de-filmes">
+        <img class="Lista-de-filmes_imagem-dos-filmes" src="./img/poster/poster-mario.jpg"
+            alt="PosterdofilmeTheSuperMarioBros.Movie">
+        <div class="Lista-de-filmes_cabeçalho">
+            <a class="Lista-de-filmes_cabeçalho_Titulo-dos_filmes" href="./filme.html">The Super Mario Bros. Movie </a>
+            <p>2023 / 1h 32m / Animação, Aventura, Comédia </p>
+            <img class="Lista-de-filmes_cabeçalho_Estrela" src="./img/EstrelaAvaliação.png" alt="EstrelaAvaliação">
+            <p>Aaron Horvath, Michael Jelenic, Pierre Leduc, Fabien Polack | Chris Pratt, Anya Taylor-Joy, Charlie Day
+            </p>
+            <p>Um encanador chamado Mario precisa salvar seu irmão Luigi das garras do rei dos Koopas, Bowser.
+                <br>Para isso, ele conta com a ajuda da princesa do Reino dos Cogumelos, Peach, e de seus amigos Toad e
+                Donkey Kong.
+            </p>
+
+          
+        </div>
+
+    </section>
+
+    <section class="Lista-de-filmes">
+        <img class="Lista-de-filmes_imagem-dos-filmes" src="./img/poster/poster_iluminado.jpg"
+            alt="Posterdofilmeiluminado">
+        <div class="Lista-de-filmes_cabeçalho"> <a class="Lista-de-filmes_cabeçalho_Titulo-dos_filmes" href="">O
+                iluminado</a>
+            <p>1980 /2h 26m16 / Drama,Terror</p>
+            <img class="Lista-de-filmes_cabeçalho_Estrela" src="./img/EstrelaAvaliação.png"
+                alt="EstrelaAvaliação">
+            <p> <a href="./diretor_kubrick.html">Stanley Kubrick</a> | Jack Nicholson, Shelley Duvall, Danny
+                Lloyd</p>
+            <p>Jack Torrance aceita ser caseiro de inverno do isolado Hotel Overlook, nas montanhas do Colorado,
+                na esperança de curar seu bloqueio de escritor. <br> Ele se instala com a esposa, Wendy, e o
+                filho, Danny. O garoto logo começa a ser atormentando por premonições. Jack não consegue
+                escrever e as visões de Danny se tornam mais perturbadoras.
+            </p>
+        </div>
+
+    </section>
 </body>
+
 </html>

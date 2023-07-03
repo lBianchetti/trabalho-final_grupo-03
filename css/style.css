@@ -53,3 +53,36 @@ h3 {
     width: 657px;
     margin-left: 10px;
 }
+
+.ordem-dos-filmes_Titulo {
+    display: inline-block;
+}
+
+.ordem-dos-filmes_Tabela {
+    display: inline-block;
+    color: #fff;
+    margin-right: 550px;
+    margin-bottom: 40px ;
+}
+
+.Lista-de-filmes {
+    align-items: flex-start;
+    display: flex;
+}
+
+.Lista-de-filmes_imagem-dos-filmes {
+    width: 200px;
+  margin-bottom: 30px;
+}
+
+.Lista-de-filmes_Titulo-dos-filmes {
+    margin: 0;
+}
+
+.Lista-de-filmes_cabeçalho {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.Lista-de-filmes_cabeçalho_Estrela {width: 15px;
+margin: 0;}

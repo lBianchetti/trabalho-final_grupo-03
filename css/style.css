@@ -47,11 +47,48 @@ h3 {
 
 #imagem1 {
     width: 250px;
+    border-radius: 10px;
 }
 
 #imagem2 {
     width: 657px;
     margin-left: 10px;
+    border-radius: 10px;
+}
+
+#direcao {
+    font-size: 23px;
+    border-style: solid;
+    border-width: 2px;
+    border-right: none;
+    border-left: none;
+    width: 925px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 10px 10px 10px 0px;
+}
+
+#roteiro {
+    font-size: 23px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 925px;
+    margin-top: 0px;
+    padding: 10px 10px 10px 0px;
+}
+
+.descricao {
+    border-style: solid;
+    border-color: #fff;
+    border-width: 2px;
+    width: 925px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 0px;
+    padding: 10px 10px 10px 0px;
 }
 
 .ordem-dos-filmes_Titulo {
@@ -84,5 +121,17 @@ h3 {
     flex-direction: column;
     margin: 0;
 }
+
 .Lista-de-filmes_cabeçalho_Estrela {width: 15px;
-margin: 0;}
+margin: 0;
+}
+
+.tags {
+    border-style: solid;
+    border-color: #DDE316;
+    border-radius: 10px;
+    border-width: 2px;
+    width: 245px;
+    text-align: center;
+    margin-top: 15px;
+}

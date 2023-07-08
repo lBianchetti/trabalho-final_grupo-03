@@ -1,0 +1,95 @@
+*{
+    font-family: 'Lexend', sans-serif;
+}  
+
+/* Buttons */
+
+/* Buttons large */
+
+.button__primary__lg{
+    background-color: #DDE316;
+    color: #030007;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.button__primary__lg:hover{
+    background-color:  #F9FF55;
+}
+
+
+
+.button__secondary__lg{
+    background-color: #dce31600;
+    color: #DDE316;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.button__tertiary__lg{
+    background: rgba(221, 227, 22, 0.08);
+    color: #DDE316;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    backdrop-filter: blur(25px);
+}
+
+/* Buttons medium */
+
+.button__primary__md{
+    background-color: #DDE316;
+    color: #030007;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.button__secondary__md{
+    background-color: #dce31600;
+    color: #DDE316;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.button__tertiary__md{
+    background: rgba(221, 227, 22, 0.08);
+    color: #DDE316;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    backdrop-filter: blur(25px);
+}

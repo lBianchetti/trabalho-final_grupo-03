@@ -1,8 +1,16 @@
 *{
     font-family: 'Lexend', sans-serif;
-}  
+    padding: 0;
+    margin: 0;
+} 
 
-/* Buttons */
+*:focus{
+    box-shadow: 0px 0px 0px 2px #1C1B1F, 0px 0px 0px 4px #DDE316;
+    outline: none;
+}
+
+
+/* Buttons *
 
 /* Buttons large */
 
@@ -24,12 +32,11 @@
 }
 
 
-
 .button__secondary__lg{
     background-color: #dce31600;
     color: #DDE316;
     padding: 16px 24px;
-    border: none;
+    border: solid 2px #DDE316;
     border-radius: 500px;
     cursor: pointer;
     font-size: 1.25rem;
@@ -71,7 +78,7 @@
     background-color: #dce31600;
     color: #DDE316;
     padding: 16px 24px;
-    border: none;
+    border: solid 2px #DDE316;
     border-radius: 500px;
     cursor: pointer;
     font-size: 1rem;
@@ -92,4 +99,27 @@
     font-weight: 600;
     line-height: 100%;
     backdrop-filter: blur(25px);
+}
+
+.menu{
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    width: auto;
+    display: flex;
+}
+
+.menu__nav{
+    display: flex;
+    gap: 32px;
+    width: fit-content ;
+}
+
+.menu__nav__item{
+
+}
+
+.banner{
+    width: 100%;
 }

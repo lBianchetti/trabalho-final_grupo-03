@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FILMES! | Home</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/components.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&family=Montserrat:wght@400;600&display=swap');
@@ -14,18 +13,18 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="menu">
             <img src="./img/Logo_FILMES!.svg" alt="logo-filmes">
-            <ul>
-                <li><a href="./index.html">Início</a></li>
-                <li><a href="./recomendacoes.html">Recomendações</a></li>
-                <li><a href="./Favoritos.html">Favoritos</a></li>
+            <ul class="menu__nav">
+                <li class="menu__nav__item"><a href="./index.html">Início</a></li>
+                <li class="menu__nav__item"><a href="./recomendacoes.html">Recomendações</a></li>
+                <li class="menu__nav__item"><a href="./Favoritos.html">Favoritos</a></li>
             </ul>
         </nav>
     </header>
     <section>
         <div>
-            <img src="./img/cenas/banner-header.png" alt="Banner promocional, filme The Super Mario Bros. Movie.">
+            <img class="banner" src="./img/cenas/banner-header.png" alt="Banner promocional, filme The Super Mario Bros. Movie.">
         </div>
         <div>
             <div>
@@ -36,13 +35,13 @@
             <div>
                 <p>4.4 ⭐<br> 349 reviews</p>
                 <a href="/filme.html"><button class="button__primary__lg">Assista Agora</button></a>
-                <a href="./trailer/Super Mario Bros. O Filme _ Trailer Final Dublado.mp4"><button class="button__primary__lg">Ver Trailer</button></a>
+                <a href="./trailer/Super Mario Bros. O Filme _ Trailer Final Dublado.mp4"><button class="button__secondary__lg">Ver Trailer</button></a>
             </div>
         </div>
     </section>
     <section>
         <h2>Quizzes</h2>
-        <span><a href="./quizz.html">Ver Mais</a></span>
+        <span><a class="button__secondary__lg" href="./quizz.html">Ver Mais</a></span>
         <div>
             <img src="./img/poster/poster_pulp-fiction.jpg" alt="poster_pulp-fiction">
             <h2>Cinema Novo</h2>
@@ -57,12 +56,12 @@
 
     <section>
         <h2>Recomendações</h2>
-        <span><a href="./recomendacoes.html">Ver Mais</a></span>
+        <span><a class="button__secondary__lg"href="./recomendacoes.html">Ver Mais</a></span>
     </section>
 
     <section>
         <h2>Diretores</h2>
-        <span><a href="./diretor_kubrick.html">Ver Mais</a></span>
+        <span><a class="button__secondary__lg"href="./diretor_kubrick.html">Ver Mais</a></span>
         <div>
             <img src="./img/retratos/kubrick.jpg" alt="kubrick">
             <h2>Stanley Kubrick</h2>

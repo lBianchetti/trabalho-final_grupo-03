@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/components.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&family=Montserrat:wght@400;600&display=swap');
-      </style>
+    </style>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
         <nav class="menu">
             <img src="./img/Logo_FILMES!.svg" alt="logo-filmes">
             <ul class="menu__nav">
-                <li class="menu__nav__item"><a href="./index.html">Início</a></li>
+                <li class="menu__nav__item page"><a href="./index.html">Início</a></li>
                 <li class="menu__nav__item"><a href="./recomendacoes.html">Recomendações</a></li>
                 <li class="menu__nav__item"><a href="./Favoritos.html">Favoritos</a></li>
             </ul>
@@ -24,20 +24,36 @@
     </header>
     <section>
         <div>
-            <img class="banner" src="./img/cenas/banner-header.png" alt="Banner promocional, filme The Super Mario Bros. Movie.">
+            <img class="banner-image" src="./img/cenas/banner-header.png"
+                alt="Banner promocional, filme The Super Mario Bros. Movie.">
         </div>
-        <div>
+
+        <div class="featured">
+
             <div>
-                <h1>The Super Mario Bros. Movie</h1>
-                <p>2023 • 92 minutos</p>
-                <img width="250px" src="./img/poster/poster-mario.jpg" alt="Poster do filme The Super Mario Bros. Movie">
+                <img class="featured__poster" width="250px" src="./img/poster/poster-mario.jpg"
+                    alt="Poster do filme The Super Mario Bros. Movie">
             </div>
-            <div>
-                <p>4.4 ⭐<br> 349 reviews</p>
-                <a href="/filme.html"><button class="button__primary__lg">Assista Agora</button></a>
-                <a href="./trailer/Super Mario Bros. O Filme _ Trailer Final Dublado.mp4"><button class="button__secondary__lg">Ver Trailer</button></a>
+
+            <div class="content">
+                <div class="featured__title">
+                    <h1>The Super Mario Bros. Movie</h1>
+                    <p>2023 • 92 minutos</p>
+                </div>
+
+
+                <div class="featured__review">
+                    <p>4.4 ⭐<br> 349 reviews</p>
+                    <a class="button__primary__lg" href="/filme.html">
+                        Assista Agora</a>
+
+                    <a class="button__secondary__lg"
+                        href="./trailer/Super Mario Bros. O Filme _ Trailer Final Dublado.mp4">
+                        Ver Trailer</span></a>
+                </div>
             </div>
         </div>
+
     </section>
     <section>
         <h2>Quizzes</h2>
@@ -45,28 +61,28 @@
         <div>
             <img src="./img/poster/poster_pulp-fiction.jpg" alt="poster_pulp-fiction">
             <h2>Cinema Novo</h2>
-            <button class="button__primary__lg">Jogar</button>
+            <span class="button__primary__lg">Jogar</span>
         </div>
         <div>
             <img src="./img/poster/poster_pulp-fiction.jpg" alt="poster_pulp-fiction">
             <h2>Cinema Novo</h2>
-            <button class="button__primary__lg">Jogar</button>
+            <span class="button__primary__lg">Jogar</span>
         </div>
     </section>
 
     <section>
         <h2>Recomendações</h2>
-        <span><a class="button__secondary__lg"href="./recomendacoes.html">Ver Mais</a></span>
+        <span><a class="button__secondary__lg" href="./recomendacoes.html">Ver Mais</a></span>
     </section>
 
     <section>
         <h2>Diretores</h2>
-        <span><a class="button__secondary__lg"href="./diretor_kubrick.html">Ver Mais</a></span>
+        <span><a class="button__secondary__lg" href="./diretor_kubrick.html">Ver Mais</a></span>
         <div>
             <img src="./img/retratos/kubrick.jpg" alt="kubrick">
             <h2>Stanley Kubrick</h2>
             <p>Direção | Roteiro | Produção</p>
-            <button class="button__primary__lg">Conheça</button>
+            <span class="button__primary__lg">Conheça</span>
         </div>
         <div>
             <img src="./img/retratos/kubrick.jpg" alt="diretor_kubrick">

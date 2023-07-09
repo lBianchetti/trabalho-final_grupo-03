@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.hero__img{
+    width: 100%;
+}
+
+.diretor{
+    width: 960px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    top: -100px;
+    margin: auto;
+    background-color: #00000070;
+    backdrop-filter: blur(10px);
+    display: flex;
+    gap: 20px;
+}
+
+.diretor__retrato__img{
+    border-radius: 20px;
+}
+
+.diretor__txt__nome{
+    font-size: 3rem;
+}
+
+.diretor__txt__cargo{
+    font-size: 1.5rem;
+}
+
+
+.filmes__waper{
+    width: 960px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.card__poster{
+    width: 240px;
+    height: 420px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+}
+
+.card__txt{
+    width: 240px;
+    height: 420px;
+    border-radius: 20px;
+    background-color: #00000070;
+    opacity: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.card__txt:hover{
+    opacity: 1;
+}
+
+.card__txt__titulo{
+    font-size: 2rem;
+}

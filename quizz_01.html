@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FILMES! | Quizz</title>
+
+    <link rel="stylesheet" href="./css/style_quizz_01.css">
 </head>
 <body>
     <header>
@@ -17,16 +19,19 @@
         </nav>
     </header>
 
-    <div>
-        <h4>Qual é o filme?</h4>
-        <img src="./img/cenas/cena_dr-fantastico.jpg" alt="Homem se sufocandocom mão direita">
-
-        <div><p>Nascido para Matar</p></div>
-        <div><p>O Grande Golpe</p></div>
-        <div><p>Dr Fantástico</p></div>
+    <div class="jogo">
+        <h4 class="jogo__pergunta">Qual é o filme?</h4>
+        <img src="./img/cenas/cena_dr-fantastico.jpg" alt="Homem se sufocandocom mão direita" class="jogo__img">
+        <div class="jogo__opcao">
+            <div class="jogo__opcao__escolha"><p>Nascido para Matar</p></div>
+            <div class="jogo__opcao__escolha"><p>O Grande Golpe</p></div>
+            <div class="jogo__opcao__escolha"><p>Dr Fantástico</p></div>
+        </div>
     </div>
 
+    <div class="counter">
     <span>1/5</span>
     <a href="./quizz_01.html">próxima pergunta &gt;</a>
+    </div>
 </body>
 </html>

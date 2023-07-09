@@ -1,0 +1,43 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+body{
+    background-color: black;
+    color: white;
+}
+
+.jogo{
+    margin: auto;
+    width: 900px;
+}
+
+.jogo__pergunta{
+    font-size: 2rem;
+}
+
+.jogo__img{
+    border-radius: 20px;
+}
+
+.jogo__opcao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jogo__opcao__escolha{
+    padding: 5px 60px;
+    border-radius: 50px;
+    color: #dce316;
+    background-color: #dce31670;
+}
+
+.jogo__opcao__escolha:hover{
+    color: black;
+    background-color: #dce316;
+}
+
+.counter{
+    text-align:right;
+}
+

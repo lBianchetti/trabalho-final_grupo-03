@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FILMES! | Stanley Kubrick</title>
+
+    <link rel="stylesheet" href="./css/style_diretor.css">
 </head>
 <body>
     <header>
@@ -18,15 +20,15 @@
     </header>
 
     <section>
-        <div>
-            <img src="./img/cenas/cena_2001.jpg" alt="Astronauta em uma estação espacial">
+        <div class="hero">
+            <img class="hero__img" src="./img/cenas/cena_2001.jpg" alt="Astronauta em uma estação espacial">
         </div>
 
-        <div>
-            <div><img src="./img/retratos/kubrick.jpg" alt="Stanley Kubrick"></div>
-            <div>
-                <h4>Stanley Kubrick</h4>
-                <h5>Direção | Roteiro | Produção</h5>
+        <div class="diretor">
+            <div class="diretor__retrato"><img class="diretor__retrato__img" src="./img/retratos/kubrick.jpg" alt="Stanley Kubrick"></div>
+            <div class="diretor__txt">
+                <h4 class="diretor__txt__nome">Stanley Kubrick</h4>
+                <h5 class="diretor__txt__cargo">Direção | Roteiro | Produção</h5>
             </div>
         </div>
     </section>
@@ -34,52 +36,64 @@
     <main>
         <h2>Filmes</h2>
 
-        <div>
-            <div>
-                <img src="./img/poster/poster_o-iluminado.jpg" alt="poser O Iluminado">
+        <div class="filmes__waper">
+
+        <div class="card">
+            <div class="card__poster">
+                <img class="card__poster__img" src="./img/poster/poster_o-iluminado.jpg" alt="poser O Iluminado">
             </div>
 
-            <div>
-                <span>Stanley Kubrick</span>
-                <span>1986</span>
-                <h4>O Iluminado</h4>
+            <div class="card__txt">
+                <div class="card__txt__linha">
+                    <span class="card__text__linha_diretor">Stanley Kubrick</span>
+                    <span class="card__text__linha_ano">1986</span>
+                </div>
+                <h4 class="card__txt__titulo">O Iluminado</h4>
             </div>
         </div>
 
-        <div>
-            <div>
-                <img src="./img/poster/poster_2001.jpg" alt="poser 2001 Uma Odisseia no Espaço">
+        <div class="card">
+            <div class="card__poster">
+                <img class="card__poster__img" src="./img/poster/poster_2001.jpg" alt="poser O Iluminado">
             </div>
 
-            <div>
-                <span>Stanley Kubrick</span>
-                <span>1966</span>
-                <h4>2001 Uma Odisseia no Espaço</h4>
+            <div class="card__txt">
+                <div class="card__txt__linha">
+                    <span class="card__text__linha_diretor">Stanley Kubrick</span>
+                    <span class="card__text__linha_ano">1986</span>
+                </div>
+                <h4 class="card__txt__titulo">O Iluminado</h4>
             </div>
         </div>
 
-        <div>
-            <div>
-                <img src="./img/poster/poser_laranja-mecanica.jpg" alt="poser Laranja Mecanica">
+        <div class="card">
+            <div class="card__poster">
+                <img class="card__poster__img" src="./img/poster/poster_olhos-fechados.jpg" alt="poser O Iluminado">
             </div>
 
-            <div>
-                <span>Stanley Kubrick</span>
-                <span>1976</span>
-                <h4>Laranja Mecânica</h4>
+            <div class="card__txt">
+                <div class="card__txt__linha">
+                    <span class="card__text__linha_diretor">Stanley Kubrick</span>
+                    <span class="card__text__linha_ano">1986</span>
+                </div>
+                <h4 class="card__txt__titulo">O Iluminado</h4>
             </div>
         </div>
 
-        <div>
-            <div>
-                <img src="./img/poster/poster_olhos-fechados.jpg" alt="poser De Olhos Bem Fechados">
+        <div class="card">
+            <div class="card__poster">
+                <img class="card__poster__img" src="./img/poster/poser_laranja-mecanica.jpg" alt="poser O Iluminado">
             </div>
 
-            <div>
-                <span>Stanley Kubrick</span>
-                <span>1979</span>
-                <h4>De Olhos Bem Fechados</h4>
+            <div class="card__txt">
+                <div class="card__txt__linha">
+                    <span class="card__text__linha_diretor">Stanley Kubrick</span>
+                    <span class="card__text__linha_ano">1986</span>
+                </div>
+                <h4 class="card__txt__titulo">O Iluminado</h4>
             </div>
+        </div>
+
         </div>
     </main>
 </body>

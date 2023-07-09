@@ -9,6 +9,7 @@ body{
 
 .jogo{
     margin: auto;
+    padding-top: 20vh;
     width: 900px;
 }
 

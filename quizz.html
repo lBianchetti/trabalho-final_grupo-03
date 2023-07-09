@@ -6,19 +6,25 @@
     <title>FILMES! | Quizzes</title>
 
     <link rel="stylesheet" href="./css/style_quizz.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&family=Montserrat:wght@400;600&display=swap');
+    </style>
 
 </head>
 <body>
+    <!-- Componente do menu -->
     <header>
-        <nav>  
+        <nav class="menu">
             <img src="./img/Logo_FILMES!.svg" alt="logo-filmes">
-            <ul>
-                <li><a href="./index.html">Início</a></li>
-                <li><a href="./recomendacoes.html">Recomendações</a></li>
-                <li><a href="./Favoritos.html">Favoritos</a></li>
+            <ul class="menu__nav">
+                <li class="menu__nav__item page"><a href="./index.html">Início</a></li>
+                <li class="menu__nav__item"><a href="./recomendacoes.html">Recomendações</a></li>
+                <li class="menu__nav__item"><a href="./Favoritos.html">Favoritos</a></li>
             </ul>
         </nav>
     </header>
+    <!-- Componente do menu -->
 
     <main class="mainContainer">
 
@@ -41,7 +47,7 @@
         </div>
 
         <div class="quizzContainer">
-            <img src="./img/poster/poster_psicose.jpg" alt="poster Psicose class="quizzContainer__img"">
+            <img src="./img/poster/poster_psicose.jpg" alt="poster Psicose" class="quizzContainer__img">
             <div class="quizzContainer__txt">
                 <h3 class="quizzContainer__txt__titulo">Clássicos do Cinema</h3>
                 <span class="quizzContainer__txt__tempo">10 min</span>

@@ -8,6 +8,15 @@ body {
     background-color: #030007;
 }
 
+.background {
+    background-image: url(../img/cenas/banner-header.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    filter: blur(8px);
+}
+
 *:focus {
     border-radius: 4px;
 }
@@ -20,17 +29,6 @@ body {
 nav {
     display: inline-block;
     width: 100%;
-}
-
-.content .img .imagem1 {
-    width: 300px;
-    border-radius: 20px;
-}
-
-.content .img .imagem2 {
-    width: 786px;
-    border-radius: 20px;
-    margin-left: 20px;
 }
 
 .menu {
@@ -68,31 +66,43 @@ nav {
     transition: ease-out 100ms;
 }
 
-.content {
-    margin-top: 25px;
-    margin-left: 250px;
+.flexbox {
+    display: flex;
+    justify-content: center;
 }
 
-.featured__title {
+.flexbox__title {
     color: white;
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
-.featured__title p {
+.flexbox__title p {
     color: #DDE316;
     font-size: 1.5rem;
     margin-top: 5px;
 }
 
-.container {
-    margin-left: 250px;
-    font-size: 22px;
+.flexbox__img {
+    margin-top: 25px;
+}
+#img1 {
+    width: 300px;
+    border-radius: 20px;
+}
+
+#img2 {
+    width: 786px;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+.flexbox__container p {
     color: white;
 }
 
-.container .container__descricao {
-    font-size: 22px;
+.flexbox__container .container__descricao {
+    font-size: 20px;
     border-style: solid;
     border-color: #fff;
     border-width: 2px;
@@ -105,6 +115,7 @@ nav {
 }
 
 .container__direcao {
+    font-size: 20px;
     border-style: solid;
     border-width: 2px;
     width: 950px;
@@ -116,6 +127,7 @@ nav {
 }
 
 .container__roteiro {
+    font-size: 20px;
     border-style: solid;
     border-width: 2px;
     width: 950px;
@@ -127,6 +139,7 @@ nav {
 }
 
 .container__elenco {
+    font-size: 20px;
     border-style: solid;
     border-width: 2px;
     width: 950px;
@@ -139,13 +152,14 @@ nav {
 
 .container__color {
     color: #DDE316;
+    font-size: 20px;
 }
 
 .tags {
-    display: flex;
     color: #DDE316;
+    display: flex;
+    flex-direction: row;
     gap: 30px;
-    margin-left: 250px;
     margin-bottom: 15px;
     margin-top: 15px;
 }
@@ -178,6 +192,16 @@ nav {
     width: fit-content;
     padding: 15px;
     text-align: center;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.column p {
+    color:#fff;
 }
 
 .ordem-dos-filmes_Titulo {

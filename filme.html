@@ -7,34 +7,90 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="background"></div>
     <header>
-        <nav>
+        <nav class="menu">
             <img src="./img/Logo_FILMES!.svg" alt="logo-filmes">
-            <ul>
-                <li><a href="./index.html">Início</a></li>
-                <li><a href="./recomendacoes.html">Recomendações</a></li>
-                <li><a href="./Favoritos.html">Favoritos</a></li>
+            <ul class="menu__nav">
+                <li class="menu__nav__item page"><a href="./index.html">Início</a></li>
+                <li class="menu__nav__item"><a href="./recomendacoes.html">Recomendações</a></li>
+                <li class="menu__nav__item"><a href="./Favoritos.html">Favoritos</a></li>
             </ul>
         </nav>
     </header>
     <section> <!--título do filme, foto e trailer-->
-        <h1>The Super Mario Bros. Movie</h1>
-        <p class="data">2023 • 92 minutos</p>
-        <div class="imagem">
-        <img id="imagem1" src="./img/poster/poster-mario.jpg" alt="Poster do filme The Super Mario Bros. Movie"> 
-        <a href="./trailer/Super Mario Bros. O Filme _ Trailer Final Dublado.mp4"><img id="imagem2" src="./img/cenas/banner-header.png" alt="Banner promocional, filme The Super Mario Bros. Movie"></a>
+        <div class="flexbox">
+            <div class="flexbox__content">
+                <div class="flexbox__title">
+                    <h1>The Super Mario Bros. Movie</h1>
+                    <p class="data">2023 • 10 • 92 minutos</p>
+                </div>
+                <div class="flexbox__img">
+                    <img id="img1" src="./img/poster/poster-mario.jpg" alt="Poster do filme The Super Mario Bros. Movie"> 
+                    <a href="./trailer/Super Mario Bros. O Filme _ Trailer Final Dublado.mp4">
+                        <img id="img2" src="./img/cenas/banner-header.png" alt="Banner promocional, filme The Super Mario Bros. Movie">
+                    </a>
+                </div>
+            </div>
+        </div>
+    <section>
+        <div class="flexbox">
+            <div class="flexbox__container">
+                <div class="tags">
+                    <h4 class="tags__animacao">Animação</h4>
+                    <h4 class="tags__aventura">Aventura</h4>
+                    <h4 class="tags__comedia">Comédia</h4>
+                </div>
+                <p class="container__descricao">Um encanador chamado Mario precisa salvar seu irmão Luigi das garras do rei dos Koopas, Bowser.<br>Para isso, ele conta com a ajuda da princesa do Reino dos Cogumelos, Peach, e de seus amigos Toad e Donkey Kong.</p>
+                <p class="container__direcao">Direção <div class="container__color">Aaron Horvath • Michael Jelenic • Pierre Leduc • Fabien Polack</div></p>
+                <p class="container__roteiro">Roteirista <div class="container__color">Matthew Fogel</div></p>
+                <p class="container__elenco">Elenco Principal ></p>
+            </div>
         </div>
     </section>
     <section>
-        <div class="tags">
-            <h3>Animação Aventura Comédia</h3>
-        </div>
-        <p class="descricao">Um encanador chamado Mario precisa salvar seu irmão Luigi das garras do rei dos Koopas, Bowser.<br>Para isso, ele conta com a ajuda da princesa do Reino dos Cogumelos, Peach, e de seus amigos Toad e Donkey Kong.</p>
-    </section>
-    <section>
-        <div>
-            <p id="direcao">Direção: Aaron Horvath • Michael Jelenic • Pierre Leduc • Fabien Polack</p>
-            <p id="roteiro">Roteirista: Matthew Fogel</p>
+        <div class="row">
+            <div class="column">
+                <img src="./img/elenco/chris.jpg" width="100px" alt="narração">
+                <div class="column__descricao">
+                    <p>Chris Pratt</p>
+                    <br>
+                    <p>Mario (Narração)</p>
+                </div>
+                <img src="./img/elenco/Charlie_Day_by_Gage_Skidmore.jpg" width="100px" alt="narração">
+                <div class="column__descricao">
+                    <p>Charlie Day</p>
+                    <br>
+                    <p>Luigi (Narração)</p>
+                </div>
+            </div>
+            <div class="column">
+                <img src="./img/elenco/Anya_Taylor-Joy_by_Patrick_Lovell,_January_2019.jpg" width="100px" alt="narração">
+                <div class="column__descricao">
+                    <p>Anya Taylor-Joy</p>
+                    <br>
+                    <p>Peach (Narração)</p>
+                </div>
+                <img src="./img/elenco/MV5BMTQ0NjgzNzcwNV5BMl5BanBnXkFtZTcwODExMDYxOQ@@._V1_FMjpg_UX1000_.jpg" width="100px" alt="narração">
+                <div class="column__descricao">
+                    <p>Seth Rogen</p>
+                    <br>
+                    <p>Donkey Kong (Narração)</p>
+                </div>
+            </div>
+            <div class="column">
+                <img src="./img/elenco/MV5BYTFiMWNlNmItMDRiYy00NzA4LWE5YjItZmViNWQ2NzhhOWZlXkEyXkFqcGdeQXVyMTA2Mjc5ODMy._V1_.jpg" width="100px" alt="narração">
+                <div class="column__descricao">
+                    <p>Jack Black</p>
+                    <br>
+                    <p>Bowser (Narração)</p>
+                </div>
+                <img src="./img/elenco/Keegan-Michael_Key_(49550965587)_(cropped).jpg" width="100px" alt="narração">
+                <div class="column__descricao">
+                    <p>Keegan-Michael Key</p>
+                    <br>
+                    <p>Toad (Narração)</p>
+                </div>
         </div>
     </section>
 </body>

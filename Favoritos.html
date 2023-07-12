@@ -14,42 +14,43 @@
 </head>
 
 <body>
+    <div class="background"></div>
     <header>
-        <nav>
+        <nav class="menu">
             <img src="./img/Logo_FILMES!.svg" alt="logo-filmes">
-            <ul>
-                <li><a href="./index.html">Início</a></li>
-                <li><a href="./recomendacoes.html">Recomendações</a></li>
-                <li><a href="./Favoritos.html">Favoritos</a></li>
+            <ul class="menu__nav">
+                <li class="menu__nav__item page"><a href="./index.html">Início</a></li>
+                <li class="menu__nav__item"><a href="./recomendacoes.html">Recomendações</a></li>
+                <li class="menu__nav__item"><a href="./Favoritos.html">Favoritos</a></li>
             </ul>
         </nav>
-        <div class="Menu-favoritos">
-            <nav class="Menu-favoritos_botoes">
-                <div class="Menu-favoritos_botoes_div-de-separação">
-                    <h1 class="Menu-favoritos_botoes_Titulo">Meus Favoritos</h1>
-                    <a class="button__secondary__md" href="">Criar Nova Lista</a>
-                    <a class="button__secondary__md" href="">Editar</a>
-                    <a class="button__secondary__md" href="">Compartilhar</a>
-                </div>
-              
-          
-                <nav class="Menu-favoritos_botoes_submenu">
-                    <h3 class="Menu-favoritos_botoes_Titulo2">Títulos</h3>
-                    <form class="Menu-favoritos_botoes_Tabela" action="">
-                      <label for="ordenarpor">Ordenar por:</label>
-                      <select name="ordem" id="ordenarpor">
-                        <option value="">Alfabética</option>
-                        <option value="Lançamento">Lançamento</option>
-                        <option value="Popularidade">Popularidade</option>
-                      </select>
-                    </form>
-                  </nav>
-                </nav>
-              </header>
-          </div>
-        </div>
-        
     </header>
+
+    <div class="Menu-favoritos">
+        <nav class="Menu-favoritos_botoes">
+            <div class="Menu-favoritos_botoes_div-de-separação">
+                <h1 class="Menu-favoritos_botoes_Titulo">Meus Favoritos</h1>
+                <a class="button__secondary__md" href="">Criar Nova Lista</a>
+                <a class="button__secondary__md" href="">Editar</a>
+                <a class="button__secondary__md" href="">Compartilhar</a>
+            </div>
+          
+      
+            <nav class="Menu-favoritos_botoes_submenu">
+                <h3 class="Menu-favoritos_botoes_Titulo2">Títulos</h3>
+                <form class="Menu-favoritos_botoes_Tabela" action="">
+                  <label for="ordenarpor">Ordenar por:</label>
+                  <select name="ordem" id="ordenarpor">
+                    <option value="">Alfabética</option>
+                    <option value="Lançamento">Lançamento</option>
+                    <option value="Popularidade">Popularidade</option>
+                  </select>
+                </form>
+              </nav>
+            </nav>
+          </header>
+      </div>
+    </div>
     <section class="Lista-de-filmes">
         <img class="Lista-de-filmes_imagem-dos-filmes" src="./img/poster/poster-mario.jpg"
             alt="PosterdofilmeTheSuperMarioBros.Movie">

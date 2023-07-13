@@ -1,121 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_recomendacoes.css">
+    <link rel="stylesheet" href="./css/components.css">
     <title>FILMES! | Recomendações</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap');
+    </style> 
 </head>
+
 <body>
 
     <header>
-        <nav>
-            <img src="./img/Logo_FILMES!.svg" alt="logo-filmes">
-            <ul>
-                <li><a href="./index.html">Início</a></li>
-                <li><a href="./recomendacoes.html">Recomendações</a></li>
-                <li><a href="./Favoritos.html">Favoritos</a></li>
-            </ul>
-        </nav>
+            <nav class="menu">
+                <img src="./img/Logo_FILMES!.svg" alt="logo-filmes">
+                <ul class="menu__nav">
+                    <li class="menu__nav__item page"><a href="./index.html">Início</a></li>
+                    <li class="menu__nav__item"><a href="./recomendacoes.html">Recomendações</a></li>
+                    <li class="menu__nav__item"><a href="./Favoritos.html">Favoritos</a></li>
+                </ul>
+            </nav>
     </header>
 
-    <h1>Recomendações</h1>
-
     <section>
-        <div>
-            <img width="150px" src="./img/perfil/profile01.png" alt="Foto de perfil, curador João">
-        </div>
-        <div>
-            <div>
-                <h2>Hollywood sendo Hollywood</h2>
-                <p>João escolheu quatro películas que contam sobre o brilho das luzes reflete nas câmeras enquanto os atores interpretam a arte do cinema. Atrás das cortinas, histórias são contadas e sonhos ganham vida.</p>
-            </div>
-        <div>
-                 <ul>
-                    <li>
-                        <img width="250px" src="img/poster/poster_bartonfink.png" alt="Poster do filme Barton Fink"/>
-                        <h3>Barton Fink | 1991 | Ethan & Joel Coen | 1h56 | Comédia, Drama</h3>
-                    </li>
-                    <li>
-                        <img width="250px" src="img/poster/poster_a-malvada.png" alt="Poster do filme A Malvada"/>
-                        <h3>A Malvada | 1950 | Joseph L. Mankiewicz | 2h18 | Drama</h3>
-                    </li>
-                    <li>
-                        <img width="250px" src="/img/poster/poster-adaptacao.png" alt="Poster do filme Adaptação"/>
-                        <h3>Adaptação. | 2002 | Spike Jonze | 1h55 | Comédia, Drama</h3>
-                    </li>
-                    <li>
-                        <img width="250px" src="img/poster/poster-crepusculo-deuses.png" alt="Poster do filme Crespúsculo dos Deuses"/>
-                        <h3>Crepúsculo dos Deuses | 1950 | Billy Wilder | 1h50 | Drama, Noir</h3>
-                    </li>
-                </ul>
-            </div>
+        <div class="hero">
+            <img class="hero__img" src="./img/cenas/hero-recomendacoes.jpg" alt="Sala de cinema escura com poltronas vermelhas vazias">
         </div>
     </section>
 
-    <section>
-        <div>
-            <img width="150px" src="./img/perfil/profile02.png" alt="Foto de perfil, curadora Joana">
+    <h1 class="recomendacao">Recomendações</h1>
+
+    <section class="profile">
+        <div class="profile__container">
+            <img class="profile__picture" width="150px" src="./img/perfil/profile01.png" alt="Foto de perfil, curador João">
         </div>
-        <div>
+        <div class="profile__description">
             <div>
-                <h2>CinemÁsia</h2>
-                <p>Nas quatro produções escolhidas por Joana, as telas ganham vida com uma explosão de cores, cultura e narrativas envolventes. Dos filmes de ação aos dramas emocionantes, a cinematografia asiática encanta e transporta o público para um mundo fascinante.</p>
+                <h2 class="profile__title">Hollywood sendo Hollywood</h2>
+                <p class="profile__text">João escolheu quatro películas que contam sobre o brilho das luzes reflete nas câmeras enquanto os atores interpretam a arte do cinema. Atrás das cortinas, histórias são contadas e sonhos ganham vida.</p>
             </div>
-        <div>
-                 <ul>
-                    <li>
-                        <img width="250px" src="img/poster/poster_dersu-uzala.png" alt="Poster do filme Dersu Uzala"/>
-                        <h3>Dersu Uzala | 1975 | Akira Kurosawa | 2h22 | Aventura, Biografia, Drama</h3>
-                    </li>
-                    <li>
-                        <img width="250px" src="img/poster/poster_amor-flor-pele.png" alt="Poster do filme Amor à Flor da Pele"/>
-                        <h3>Amor à Flor da Pele | 2001 | Wong Kar-Wai | 1h58 | Drama, Romance</h3>
-                    </li>
-                    <li>
-                        <img width="250px" src="/img/poster/poster_tio-boonmee.png" alt="Poster do filme Tio Boonmee"/>
-                        <h3>Tio Boonmee, que Pode Recordar suas Vidas Passadas | 2010 | Apichatpong Weerasethakul | 1h53 | Drama, Fantasia</h3>
-                    </li>
-                    <li>
-                        <img width="250px" src="img/poster/poster_o-lamento.png" alt="Poster do filme O Lamento"/>
-                        <h3>O Lamento | 2016 | Na Hong-jin | 2h36 | Drama, Horror</h3>
-                    </li>
-                </ul>
-            </div>
+
+         <div class="filmes__waper">
+
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_bartonfink.png" alt="Poster do filme Barton Fink">
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Ethan & Joel Coen</span>
+                            <span class="card__text__linha__ano">1991</span>
+                        </div>
+                        <h4 class="card__txt__titulo">Barton Fink</h4>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_a-malvada.png" alt="Poster do filme A Malvada">
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Joseph L. Mankiewicz</span>
+                            <span class="card__text__linha__ano">1950</span>
+                        </div>
+                        <h4 class="card__txt__titulo">A Malvada</h4>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster-adaptacao.png" alt="Poster do filme Adaptação.">
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Spike Jonzez</span>
+                            <span class="card__text__linha__ano">2002</span>
+                        </div>
+                        <h4 class="card__txt__titulo">Adaptação.</h4>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster-crepusculo-deuses.png" alt="Poster do filme Crespúsculo dos Deuses"/>
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Billy Wilder </span>
+                            <span class="card__text__linha__ano">1950</span>
+                        </div>
+                        <h4 class="card__txt__titulo">Crespúsculo dos Deuses</h4>
+                    </div>
+                </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <img width="150px" src="./img/perfil/profile03.png" alt="Foto de perfil, curadora Maria">
+    <section class="profile">
+        <div class="profile__container">
+            <img class="profile__picture" width="150px" src="./img/perfil/profile02.png" alt="Foto de perfil, curador Joana">
         </div>
-        <div>
+        <div class="profile__description">
             <div>
-                <h2>Distopias Distantes?</h2>
-                <p>Em Distopias Distantes, mundos sombrios e perturbadores ganham vida nas telas. Sociedades opressivas, avanços tecnológicos descontrolados e humanidade em desespero nos levam a refletir sobre o futuro que desejamos evitar, por Maria.</p>
+                <h2 class="profile__title">CinemÁsia</h2>
+                <p class="profile__text">Nas quatro produções escolhidas por Joana, as telas ganham vida com uma explosão de cores, cultura e narrativas envolventes. Dos filmes de ação aos dramas emocionantes, a cinematografia asiática encanta e transporta o público para um mundo fascinante</p>
             </div>
-        <div>
-            <ul>
-                <li>
-                    <img width="250px" src="img/poster/poster_a-estrada.png" alt="Poster do filme A Estrada"/>
-                    <h3>A Estrada | 2010 | John Hillcoat | 1h51 | Drama, Suspense</h3>
-                </li>
-                <li>
-                    <img width="250px" src="img/poster/poster_brazil-filme.png" alt="Poster do filme Brazil - O Filme"/>
-                    <h3>Brazil - O Filme | 1985 | Terry Gilliam | 2h12 | Drama, Ficção Científica</h3>
-                </li>
-                <li>
-                    <img width="250px" src="/img/poster/poster_filhos-da-esperanca.png" alt="Poster do filme Os Filhos da Esperança"/>
-                    <h3>Os Filhos da Esperança | 2006 | Alfonso Cuarón | 1h49 | Ação, Drama, Ficção Científica</h3>
-                </li>
-                <li>
-                    <img width="250px" src="img/poster/poster_la-jetee.png" alt="Poster do filme A Pista"/>
-                    <h3>A Pista | 1962 | Chris Marker | 0h28 | Drama, Ficção Científica</h3>
-                </li>
-            </ul>
-            </div>
+
+         <div class="filmes__waper">
+
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_dersu-uzala.png" alt="Poster do filme Dersu Uzala"/>
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Akira Kurosawa</span>
+                            <span class="card__text__linha__ano">1975</span>
+                        </div>
+                        <h4 class="card__txt__titulo">Dersu Uzala</h4>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_amor-flor-pele.png" alt="Poster do filme Amor à Flor da Pele"/>
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Wong Kar-Wai</span>
+                            <span class="card__text__linha__ano">2001</span>
+                        </div>
+                        <h4 class="card__txt__titulo">Amor à Flor da Pele</h4>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_tio-boonmee.png" alt="Poster do filme Tio Boonmee"/>
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Apichatpong Weerasethakul</span>
+                            <span class="card__text__linha__ano">2010</span>
+                        </div>
+                        <h4 class="card__txt__titulo">Tio Boonmee, que Pode Recordar suas Vidas Passadas</h4>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_o-lamento.png" alt="Poster do filme O Lamento"/>
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Na Hong-jin</span>
+                            <span class="card__text__linha__ano">2016</span>
+                        </div>
+                        <h4 class="card__txt__titulo">O Lamento</h4>
+                    </div>
+                </div>
         </div>
-    </section>
+    </section> 
+
+    <section class="profile">
+        <div class="profile__container">
+            <img class="profile__picture" width="150px" src="./img/perfil/profile03.png" alt="Foto de perfil, curador Maria">
+        </div>
+        <div class="profile__description">
+            <div>
+                <h2 class="profile__title">Distopias Distantes</h2>
+                <p class="profile__text">Em Distopias Distantes, mundos sombrios e perturbadores ganham vida nas telas. Sociedades opressivas, avanços tecnológicos descontrolados e humanidade em desespero nos levam a refletir sobre o futuro que desejamos evitar, por Maria.</p>
+            </div>
+
+         <div class="filmes__waper">
+
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_a-estrada.png" alt="Poster do filme A Estrada"/>
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">John Hillcoat</span>
+                            <span class="card__text__linha__ano">2010</span>
+                        </div>
+                        <h4 class="card__txt__titulo">A Estrada</h4>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_brazil-filme.png" alt="Poster do filme Brazil - O Filme"/>
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Terry Gilliam</span>
+                            <span class="card__text__linha__ano">1985</span>
+                        </div>
+                        <h4 class="card__txt__titulo">Brazil - O Filme</h4>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_filhos-da-esperanca.png" alt="Poster do filme Os Filhos da Esperança"/>
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Alfonso Cuarón</span>
+                            <span class="card__text__linha__ano">2006</span>
+                        </div>
+                        <h4 class="card__txt__titulo">Os Filhos da Esperança</h4>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <div class="card__poster">
+                        <img class="card__poster__img" src="img/poster/poster_la-jetee.png" alt="Poster do filme A Pista"/>
+                    </div>
+        
+                    <div class="card__txt">
+                        <div class="card__txt__linha">
+                            <span class="card__text__linha__diretor">Chris Marker</span>
+                            <span class="card__text__linha__ano">1962</span>
+                        </div>
+                        <h4 class="card__txt__titulo">A Pista</h4>
+                    </div>
+                </div>
+        </div>
+    </section> 
 
 </body>
 

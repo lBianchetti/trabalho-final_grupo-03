@@ -1,3 +1,11 @@
+/* Filme */
+* {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #030007;
 }
@@ -8,7 +16,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    width: 100%;
     filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 *:focus {
@@ -31,7 +41,7 @@ nav {
     align-items: center;
     width: 100%;
     display: flex;
-    position: static;
+    position: fixed;
     box-sizing: border-box;
     padding: 2rem 3rem;
     z-index: 999;
@@ -63,6 +73,17 @@ nav {
 .flexbox {
     display: flex;
     justify-content: center;
+    padding-top: 100px;
+}
+
+.flexbox1 {
+    display: flex;
+}
+
+.flexbox__title h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0;
 }
 
 .flexbox__title {
@@ -91,60 +112,28 @@ nav {
     margin-left: 25px;
 }
 
-.flexbox__container p {
+.flexbox1 {
+    margin-left: -15.5rem;
+    justify-content: center;
+}
+.flexbox1__container p {
     color: white;
 }
 
-.flexbox__container .container__descricao {
+.flexbox1__container .container__descricao {
     font-size: 20px;
-    border-style: solid;
-    border-color: #fff;
-    border-width: 2px;
-    width: 950px;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+}
+
+.container__direcao, .container__elenco, .container__roteiro, .container__descricao  {
+    font-size: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    width: 860px;
     margin-bottom: 0px;
+    margin-top: 0;
     padding: 10px 10px 10px 0px;
 }
 
-.container__direcao {
-    font-size: 20px;
-    border-style: solid;
-    border-width: 2px;
-    width: 950px;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    margin-bottom: 0px;
-    padding: 10px 10px 10px 0px;
-}
-
-.container__roteiro {
-    font-size: 20px;
-    border-style: solid;
-    border-width: 2px;
-    width: 950px;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    margin-bottom: 0px;
-    padding: 10px 10px 10px 0px;
-}
-
-.container__elenco {
-    font-size: 20px;
-    border-style: solid;
-    border-width: 2px;
-    width: 950px;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    margin-bottom: 0px;
-    padding: 10px 10px 10px 0px;
-}
-
-.container__color {
+.info__container p span {
     color: #DDE316;
     font-size: 20px;
 }
@@ -158,30 +147,11 @@ nav {
     margin-top: 15px;
 }
 
-.tags .tags__aventura {
+.tags .tags__aventura, .tags__comedia, .tags__animacao{
     border-style: solid;
     border-color: #DDE316;
-    border-radius: 30%;
-    border-width: 2px;
-    width: fit-content;
-    padding: 15px;
-    text-align: center;
-}
-
-.tags .tags__comedia {
-    border-style: solid;
-    border-color: #DDE316;
-    border-radius: 30%;
-    border-width: 2px;
-    width: fit-content;
-    padding: 15px;
-    text-align: center;
-}
-
-.tags .tags__animacao {
-    border-style: solid;
-    border-color: #DDE316;
-    border-radius: 30%;
+    border-radius: 30px;
+    margin: 0;
     border-width: 2px;
     width: fit-content;
     padding: 15px;
@@ -197,6 +167,8 @@ nav {
 .column p {
     color:#fff;
 }
+
+/* FAVORITOS */
 
 .Menu-favoritos {
     display: flex;

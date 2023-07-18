@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.produtora{
+    display: flex;
+    flex-direction: row;
+    gap: 16rem;
+    padding: 0rem 4rem;
+    overflow:auto ;
+}
+
+.produtora__content{
+    display: flex ;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.produtora__content .button{
+    display: flex;
+}
+
+.produtora__content h3{
+    font-size: 1.2rem;
+    color: #DDE316;
+}
+
+.produtora__content p{
+    font-size: 1rem;
+    color: #ffffff;
+}

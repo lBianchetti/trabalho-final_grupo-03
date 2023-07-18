@@ -204,12 +204,12 @@ nav {
    margin-top: 30px;
    
   }
-.Menu-favoritos_botoes {
+  .Menu-favoritos .Menu-favoritos_botoes {
     margin-bottom: 20px;
     
     }
 
-  .Menu-favoritos_botoes_div-de-separação { 
+    .Menu-favoritos .Menu-favoritos_botoes .Menu-favoritos_botoes_div-de-separação { 
     display: flex;
    flex-direction: row;
    border-top: 1px solid rgb(110, 110, 110); 
@@ -219,11 +219,11 @@ nav {
    gap: 350px;
    
   }
-  .Menu-favoritos_botoes_Titulo { margin-left: 40px;
+  .Menu-favoritos .Menu-favoritos_botoes  .Menu-favoritos_botoes_Titulo { margin-left: 40px;
     font-size: 40px;
 }
 
-  .Menu-favoritos_botoes_submenu
+.Menu-favoritos .Menu-favoritos_botoes .Menu-favoritos_botoes_submenu
    {
    
     border-top: 1px solid rgb(110, 110, 110); 
@@ -236,11 +236,11 @@ nav {
     display: flex;
     flex-direction: row;
 }
-  .Menu-favoritos_botoes_Titulo2 {
+  .Menu-favoritos .Menu-favoritos_botoes .Menu-favoritos_botoes_Titulo2 {
     margin: 0;}
 
 
-.Lista-de-filmes {
+    .Lista-de-filmes{
     align-items: flex-start;
     display: flex;
     border-right: 1px solid rgb(110, 110, 110);
@@ -248,7 +248,7 @@ nav {
     border-bottom: 1px solid rgb(110, 110, 110); 
 }
 
-.Lista-de-filmes_imagem-dos-filmes {
+.Lista-de-filmes .Lista-de-filmes_imagem-dos-filmes {
     width: 200px;
   margin-bottom: 30px;
   border:5px solid #ffffff;
@@ -256,21 +256,21 @@ nav {
   box-shadow: 0 20px 20px rgba(221,227,22, 0.2);
 }
 
-.Lista-de-filmes_Titulo-dos-filmes {
+.Lista-de-filmes .Lista-de-filmes_Titulo-dos-filmes {
     
     margin: 0;
     color: #DDE316;
     
 }
 
-.Lista-de-filmes_cabeçalho {
+.Lista-de-filmes .Lista-de-filmes_cabeçalho {
     padding-left: 30px;
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
-.Lista-de-filmes_cabeçalho_Estrela {width: 15px;
+.Lista-de-filmes .Lista-de-filmes_cabeçalho .Lista-de-filmes_cabeçalho_Estrela {width: 15px;
 margin: 0;
 }
 

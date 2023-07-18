@@ -76,10 +76,6 @@ nav {
     padding-top: 100px;
 }
 
-.flexbox1 {
-    display: flex;
-}
-
 .flexbox__title h1 {
     color: white;
     font-size: 2rem;
@@ -113,6 +109,7 @@ nav {
 }
 
 .flexbox1 {
+    display: flex;
     margin-left: -15.5rem;
     justify-content: center;
 }
@@ -158,14 +155,16 @@ nav {
     text-align: center;
 }
 
-.column {
+.elenco_principal {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    margin-left: -15.5rem;
+    flex-direction: row;
+    gap: 15px;
 }
 
-.column p {
-    color:#fff;
+.elenco__fotos {
+    width: 110px;
+    height: 125px;
+    border-radius: 200px;
 }
-
-

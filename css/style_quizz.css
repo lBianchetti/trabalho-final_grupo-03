@@ -31,13 +31,20 @@ body{
 
 .quizzContainer__img{
     border-radius: 20px;
+    
 }
 
 .quizzContainer__txt{
     width: 750px;
     /* height: 300px; */
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1f);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo titulo btn"
+    "tempo tempo tempo btn"
+    "tempo tempo tempo btn"
+    ;
     align-content: center;
     
 }
@@ -45,15 +52,18 @@ body{
 .quizzContainer__txt__titulo{
     color: white;
     font-size: 2em;
+    grid-area: titulo;
 }
 
 .quizzContainer__txt__tempo{
     color: #DDE316;
+    grid-area: tempo;
 }
 
 .quizzContainer__txt__btn{
     margin-top: 100px;
     align-self: flex-end;
+    grid-area: btn;
 }
 
 .quizzContainer__txt__btn__a{

@@ -6,7 +6,8 @@
     <title>FILMES! | Filme</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<style>@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&family=Montserrat:wght@400;600&display=swap');
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&family=Montserrat:wght@400;600&display=swap');
 </style>
 <body>
     <div class="background"></div>
@@ -17,6 +18,7 @@
                 <li class="menu__nav__item page"><a href="./index.html">Início</a></li>
                 <li class="menu__nav__item"><a href="./recomendacoes.html">Recomendações</a></li>
                 <li class="menu__nav__item"><a href="./Favoritos.html">Favoritos</a></li>
+                <li class="menu__nav__item"><a href="./produtoras.html">Produtoras</a></li>
             </ul>
         </nav>
     </header>
@@ -29,15 +31,26 @@
                 </div>
                 <div class="flexbox__img">
                     <img id="img1" src="./img/poster/poster-mario.jpg" alt="Poster do filme The Super Mario Bros. Movie"> 
-                    <a href="./trailer/Super Mario Bros. O Filme _ Trailer Final Dublado.mp4">
-                        <img id="img2" src="./img/cenas/banner-header.png" alt="Banner promocional, filme The Super Mario Bros. Movie">
-                    </a>
+                    <video id="img2" muted controls preload="metadata">
+                        <source src="trailer/Super Mario Bros. O Filme _ Trailer Final Dublado.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
     </section>
     <section class="flexbox1">
         <div class="flexbox1__container">
+            <div class="menuzinho">
+                <ul>
+                    <li class="review">4.4 ⭐</li>
+                    <li class="review">349 reviews</li>
+                    <li class="review um">Onde Assistir</li>
+                    <li class="onde_assistir">Apple TV</li>
+                    <li class="onde_assistir">Primeiro Video</li>
+                    <li class="onde_assistir">Now BR</li>
+                    <li class="onde_assistir">Google Play Services</li>
+                </ul>
+            </div>
             <div class="tags">
                 <h4 class="tags__animacao">Animação</h4>
                 <h4 class="tags__aventura">Aventura</h4>
@@ -51,51 +64,39 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="row">
-            <div class="column">
-                <img src="./img/elenco/chris.jpg" width="100px" alt="narração">
-                <div class="column__descricao">
-                    <p>Chris Pratt</p>
-                    <br>
-                    <p>Mario (Narração)</p>
-                </div>
-                <img src="./img/elenco/Charlie_Day_by_Gage_Skidmore.jpg" width="100px" alt="narração">
-                <div class="column__descricao">
-                    <p>Charlie Day</p>
-                    <br>
-                    <p>Luigi (Narração)</p>
-                </div>
-            </div>
-            <div class="column">
-                <img src="./img/elenco/Anya_Taylor-Joy_by_Patrick_Lovell,_January_2019.jpg" width="100px" alt="narração">
-                <div class="column__descricao">
-                    <p>Anya Taylor-Joy</p>
-                    <br>
-                    <p>Peach (Narração)</p>
-                </div>
-                <img src="./img/elenco/MV5BMTQ0NjgzNzcwNV5BMl5BanBnXkFtZTcwODExMDYxOQ@@._V1_FMjpg_UX1000_.jpg" width="100px" alt="narração">
-                <div class="column__descricao">
-                    <p>Seth Rogen</p>
-                    <br>
-                    <p>Donkey Kong (Narração)</p>
-                </div>
-            </div>
-            <div class="column">
-                <img src="./img/elenco/MV5BYTFiMWNlNmItMDRiYy00NzA4LWE5YjItZmViNWQ2NzhhOWZlXkEyXkFqcGdeQXVyMTA2Mjc5ODMy._V1_.jpg" width="100px" alt="narração">
-                <div class="column__descricao">
-                    <p>Jack Black</p>
-                    <br>
-                    <p>Bowser (Narração)</p>
-                </div>
-                <img src="./img/elenco/Keegan-Michael_Key_(49550965587)_(cropped).jpg" width="100px" alt="narração">
-                <div class="column__descricao">
-                    <p>Keegan-Michael Key</p>
-                    <br>
-                    <p>Toad (Narração)</p>
-                </div>
+    <section class="elenco_principal">
+        <div class="img_box">
+            <img class="elenco__fotos" src="/img/elenco/chris.jpg" alt="">
+            <img class="elenco__fotos" src="/img/elenco/charlie_day.jpg" alt="">
+            <img class="elenco__fotos" src="/img/elenco/anya.jpg" alt="">
+        </div>
+        <div class="img_box">
+            <img class="elenco__fotos" src="/img/elenco/kevin.jpg" alt="">
+            <img class="elenco__fotos" src="/img/elenco/seth.jpg" alt="">
+            <img class="elenco__fotos" src="/img/elenco/keegan.jpg" alt="">
+        </div>
+        <div class="img_box">
+            <img class="elenco__fotos" src="/img/elenco/jack.jpg" alt="">
+            <img class="elenco__fotos" src="/img/elenco/fred.jpg" alt="">
+            <img class="elenco__fotos" src="/img/elenco/jessica.webp" alt="">
+        </div>
+        <div class="img_box">
+            <img class="elenco__fotos" src="/img/elenco/charles.jpg" alt="">
+            <img class="elenco__fotos" src="/img/elenco/john.jpg" alt="">
+            <img class="elenco__fotos" src="/img/elenco/khary.webp" alt="">
+        </div>
+        <div class="img_box">
+            <img class="elenco__fotos" src="/img/elenco/rino.webp" alt="">
+            <img class="elenco__fotos" src="/img/elenco/sebastian.jpg" alt="">
+            <img class="elenco__fotos" src="/img/elenco/eric.jpg" alt="">
         </div>
     </section>
 </body>
+<script>
+  var video = document.querySelector("video");
+  video.addEventListener("loadedmetadata", function() {
+    video.currentTime = 1;
+  });
+</script>
 </html>
 

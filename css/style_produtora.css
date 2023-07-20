@@ -30,3 +30,54 @@
     font-size: 1rem;
     color: #ffffff;
 }
+
+.featured__produtora {
+    border-radius: 16px;
+    height: 200px;
+    width: auto;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "produtoras__independentes produtoras__independentes-1";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    align-items: center;
+      margin: 0 0rem;
+}
+
+.produtoras__independentes {
+    grid-area: produtoras__independentes;
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 4rem;
+    padding: 2rem;
+    margin-left: 24px;
+}
+
+.produtoras__independentes-1 {
+    grid-area: produtoras__independentes-1;
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 4rem;
+    padding: 2rem;
+    margin-left: 24px;
+}
+
+.produtoras__independentes__conteudo h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.produtoras__independentes__conteudo p {
+    color: #DDE316;
+    font-size: 1.2rem;
+}
+
+
+

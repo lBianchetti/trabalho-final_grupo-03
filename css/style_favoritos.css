@@ -1,3 +1,9 @@
+
+body {
+  background-color: #030007;
+}
+
+
 .Menu-favoritos {
     display: flex;
     flex-direction: column;

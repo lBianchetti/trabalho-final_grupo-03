@@ -334,25 +334,26 @@ body {
 
 .carousel-inner {
     border-radius: 2rem;
-    max-height: 200px;
+    max-height: 600px;
+}
+
+.carousel-inner img {
+    object-fit: cover ;
 }
 
 .carousel-inner h5{
     font-size: 1.5rem;
 }
 
-.carousel-inner .carousel-item{
-    background-color: #000;
-}
 
 .carousel-caption {
     position:absolute ;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 4rem;
+    padding: 2.5rem;
     color: #fff;
-  }
+}
 
 .fundo {
     position: absolute ;

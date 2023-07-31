@@ -168,10 +168,9 @@ nav {
 }
 
 .elenco__fotos {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 125px;
     border-radius: 500px;
-    
 }
 
 .menuzinho {
@@ -209,10 +208,21 @@ nav {
 }
 
 .img_box {
-    margin-top: 1rem;
-    margin-left: 35.2rem;
+    margin-top: 2rem;
+    margin-left: 28rem;
 }
 
-.img_box img {
-    margin-right: 180px;
+.box_desc {
+    width: 290px;
+    display: inline-flex;
+}
+
+.box_desc p {
+    color: #fff;
+    padding: 35px 0px 20px 20px;
+    font-size: 18px;
+}
+
+.box_desc img {
+    float: left;
 }

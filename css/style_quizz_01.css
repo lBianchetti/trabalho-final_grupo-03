@@ -2,8 +2,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
     
-body{
-    background-color: black;
+.body{
+    background-color: black; 
     color: white;
 }
 
@@ -15,6 +15,11 @@ body{
 
 .jogo__pergunta{
     font-size: 2rem;
+}
+
+
+.overide{
+    max-height: 35vh; !important
 }
 
 .jogo__img{

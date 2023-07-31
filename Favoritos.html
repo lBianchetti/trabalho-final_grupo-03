@@ -16,37 +16,37 @@
 </head>
 
 <body>
-    <div class="background"></div>
     <header>
         <nav class="menu">
             <img src="./img/Logo_FILMES!.svg" alt="logo-filmes">
             <ul class="menu__nav">
-                <li class="menu__nav__item page"><a href="./index.html">Início</a></li>
+                <li class="menu__nav__item"><a href="./index.html">Início</a></li>
                 <li class="menu__nav__item"><a href="./recomendacoes.html">Recomendações</a></li>
-                <li class="menu__nav__item"><a href="./Favoritos.html">Favoritos</a></li>
+                <li class="menu__nav__item page "><a href="./Favoritos.html">Favoritos</a></li>
                 <li class="menu__nav__item"><a href="./produtoras.html">Produtoras</a></li>
             </ul>
         </nav>
     </header>
 
    
-    <div class="Menu-favoritos">
-        <nav class="Menu-favoritos_botoes">
-            <div class="Menu-favoritos_botoes_div-de-separação">
-                <h1 class="Menu-favoritos_botoes_Titulo">Meus Favoritos</h1>
+    <div class="MenuFavoritos">
+        <nav class="MenuFavoritos_Botoes">
+            <div class="MenuFavoritos_Botoes_DivDeSeparação">
+                <h1 class="MenuFavoritos_Botoes_Titulo">Meus Favoritos</h1>
                 <a class="button__secondary__md" href="">Criar Nova Lista</a>
                 <a class="button__secondary__md" href="">Editar</a>
                 <a class="button__secondary__md" href="">Compartilhar</a>
             </div>
           
       
-           <div class="Menu-favoritos_botoes_submenu"><h3 class="Menu-favoritos_botoes_Titulo2">Títulos</h3>
-            <form class="Menu-favoritos_botoes_Tabela" action="">
+           <div class="MenuFavoritos_Botoes_Submenu">
+            <h3 class="MenuFavoritos_Botoes_Titulo2">Títulos</h3>
+            <form  action="">
               <label for="ordenarpor">Ordenar por:</label>
-              <select name="ordem" id="ordenarpor">
-                <option value="">Alfabética</option>
-                <option value="Lançamento">Lançamento</option>
-                <option value="Popularidade">Popularidade</option>
+              <select  name="ordem" id="ordenarpor">
+                <option class="MenuFavoritos_Botoes_Tabela" value="Alfabética">Alfabética</option>
+                <option class="MenuFavoritos_Botoes_Tabela" value="Lançamento">Lançamento</option>
+                <option class="MenuFavoritos_Botoes_Tabela" value="Popularidade">Popularidade</option>
               </select>
             </form>
           </div>
@@ -55,13 +55,13 @@
           </header>
       </div>
     </div>
-    <section class="Lista-de-filmes">
-        <img class="Lista-de-filmes_imagem-dos-filmes" src="./img/poster/poster-mario.jpg"
+    <section class="ListaDeFilmes">
+        <img class="ListaDeFilmes_ImagemDosFilmes" src="./img/poster/poster-mario.jpg"
             alt="PosterdofilmeTheSuperMarioBros.Movie">
-        <div class="Lista-de-filmes_cabeçalho">
-            <a class="Lista-de-filmes_cabeçalho_Titulo-dos-filmes" href="./filme.html">The Super Mario Bros. Movie </a>
+        <div class="ListaDeFilmes_Cabeçalho">
+            <a class="ListaDeFilmes_Cabeçalho_TituloDosFilmes" href="./filme.html">The Super Mario Bros. Movie </a>
             <p>2023 / 1h 32m / Animação, Aventura, Comédia </p>
-            <img class="Lista-de-filmes_cabeçalho_Estrela" src="./img/EstrelaAvaliação.png" alt="EstrelaAvaliação">
+            <img class="ListaDeFilmes_Cabeçalho_Estrela" src="./img/EstrelaAvaliação.png" alt="EstrelaAvaliação">
             <p>Aaron Horvath, Michael Jelenic, Pierre Leduc, Fabien Polack | Chris Pratt, Anya Taylor-Joy, Charlie Day
             </p>
             <p>Um encanador chamado Mario precisa salvar seu irmão Luigi das garras do rei dos Koopas, Bowser.
@@ -74,13 +74,15 @@
 
     </section>
 
-    <section class="Lista-de-filmes">
-        <img class="Lista-de-filmes_imagem-dos-filmes" src="./img/poster/poster_iluminado.jpg"
+    <section class="ListaDeFilmes">
+        <img class="ListaDeFilmes_ImagemDosFilmes" src="./img/poster/poster_iluminado.jpg"
             alt="Posterdofilmeiluminado">
-        <div class="Lista-de-filmes_cabeçalho"> <a class="Lista-de-filmes_cabeçalho_Titulo-dos-filmes" href="">O
+        <div class="ListaDeFilmes_Cabeçalho"> 
+            <a class="ListaDeFilmes_Cabeçalho_TituloDosFilmes" href="./filme.html">The Super Mario Bros. Movie </a>
+            <p>2023 / 1h 32m / Animação, Aventura" href="">O
                 iluminado</a>
             <p>1980 /2h 26m16 / Drama,Terror</p>
-            <img class="Lista-de-filmes_cabeçalho_Estrela" src="./img/EstrelaAvaliação.png"
+            <img class="ListaDeFilmes_Cabeçalho_Estrela" src="./img/EstrelaAvaliação.png"
                 alt="EstrelaAvaliação">
             <p> <a href="./diretor_kubrick.html">Stanley Kubrick</a> | Jack Nicholson, Shelley Duvall, Danny
                 Lloyd</p>
@@ -92,6 +94,19 @@
         </div>
 
     </section>
+    <nav aria-label="p">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Anterior</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Próximo</a>
+          </li>
+        </ul>
+      </nav>
 </body>
 
 </html>

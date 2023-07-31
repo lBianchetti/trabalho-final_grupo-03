@@ -4,18 +4,18 @@ body {
 }
 
 
-.Menu-favoritos {
+.MenuFavoritos {
     display: flex;
     flex-direction: column;
    margin-top: 30px;
    
   }
-  .Menu-favoritos .Menu-favoritos_botoes {
+  .MenuFavoritos .Menufavoritos_Botoes {
     margin-bottom: 20px;
     
     }
 
-    .Menu-favoritos .Menu-favoritos_botoes .Menu-favoritos_botoes_div-de-separação { 
+    .MenuFavoritos .MenuFavoritos_Botoes .MenuFavoritos_Botoes_DivDeSeparação { 
     display: flex;
    flex-direction: row;
    border-top: 1px solid rgb(110, 110, 110); 
@@ -25,11 +25,11 @@ body {
    gap: 350px;
    
   }
-  .Menu-favoritos .Menu-favoritos_botoes  .Menu-favoritos_botoes_Titulo { margin-left: 40px;
+  .MenuFavoritos .MenuFavoritos_Botoes .MenuFavoritos_Botoes_Titulo { margin-left: 40px;
     font-size: 40px;
 }
 
-.Menu-favoritos .Menu-favoritos_botoes .Menu-favoritos_botoes_submenu
+.MenuFavoritos .MenuFavoritos_Botoes .MenuFavoritos_Botoes_Submenu
    {
    
     border-top: 1px solid rgb(110, 110, 110); 
@@ -42,11 +42,11 @@ body {
     display: flex;
     flex-direction: row;
 }
-  .Menu-favoritos .Menu-favoritos_botoes .Menu-favoritos_botoes_Titulo2 {
+  .MenuFavoritos .MenuFavoritos_Botoes .MenuFavoritos_Botoes_Titulo2 {
     margin: 0;}
 
 
-    .Lista-de-filmes{
+    .ListaDeFilmes{
     align-items: flex-start;
     display: flex;
     border-right: 1px solid rgb(110, 110, 110);
@@ -54,7 +54,7 @@ body {
     border-bottom: 1px solid rgb(110, 110, 110); 
 }
 
-.Lista-de-filmes .Lista-de-filmes_imagem-dos-filmes {
+.ListaDeFilmes .ListaDeFilmes_ImagemDosFilmes{
     width: 200px;
   margin-bottom: 30px;
   border:5px solid #ffffff;
@@ -62,21 +62,21 @@ body {
   box-shadow: 0 20px 20px rgba(221,227,22, 0.2);
 }
 
-.Lista-de-filmes .Lista-de-filmes_Titulo-dos-filmes {
+.ListaDeFilmes .ListaDeFilmes_TituloDosFilmes {
     
     margin: 0;
     color: #DDE316;
     
 }
 
-.Lista-de-filmes .Lista-de-filmes_cabeçalho {
+.Lista-de-filmes .ListaDeFilmes_Cabeçalho {
     padding-left: 30px;
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
-.Lista-de-filmes .Lista-de-filmes_cabeçalho .Lista-de-filmes_cabeçalho_Estrela {width: 15px;
+.ListaDeFilmes .ListaDeFilmes_Cabeçalho .ListaDeFilmes_Cabeçalho_Estrela {width: 15px;
 margin: 0;
 }
-.Menu-favoritos_botoes_Tabela { color: #030007;}
+.MenuFavoritos_Botoes_Tabela {color: #030007;}

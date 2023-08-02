@@ -223,6 +223,14 @@ nav {
     font-size: 18px;
 }
 
+.box_desc span {
+    color: #817F8A;
+}
+
 .box_desc img {
     float: left;
+}
+
+.onde_assistir a {
+    color: #DDE316;
 }

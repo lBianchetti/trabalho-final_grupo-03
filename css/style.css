@@ -9,16 +9,13 @@
 body {
     background-color: #030007;
 }
-
 .background {
-    background-image: url(../img/cenas/banner-header.png);
+    background-image: url(../img/cenas/mario-wallpaper.jpeg);
     background-position: center;
-    background-size: cover;
+    background-size: 2000px;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
 }
 
 *:focus {

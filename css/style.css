@@ -97,6 +97,10 @@ body {
     margin-top: 15px;
 }
 
+.tags h4 {
+    color: #DDE316;
+}
+
 .tags .tags__aventura, .tags__comedia, .tags__animacao{
     border-style: solid;
     border-color: #DDE316;

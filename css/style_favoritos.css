@@ -79,4 +79,28 @@ body {
 .ListaDeFilmes .ListaDeFilmes_Cabeçalho .ListaDeFilmes_Cabeçalho_Estrela {width: 15px;
 margin: 0;
 }
-.MenuFavoritos_Botoes_Tabela {color: #030007;}
+.MenuFavoritos_Botoes_Tabela {color: #030007;};
+
+.pagination {
+  margin-top: 20px;
+}
+
+.page-item.disabled .page-link {
+  color: #030007; 
+  border-color: #DDE316; 
+}
+
+
+.page-item:not(.disabled) .page-link {
+  color: #DDE316; 
+  border: 1px solid #DDE316; 
+  background-color: transparent;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  padding: 5px 10px;
+}
+
+.page-item:not(.disabled) .page-link:hover {
+  background-color: #DDE316; 
+  border-color: #DDE316; 
+  color: #030007; 
+}

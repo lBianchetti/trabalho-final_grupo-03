@@ -22,7 +22,7 @@ body {
 .flexbox {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
 .flexbox__title h1 {

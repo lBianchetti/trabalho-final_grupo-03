@@ -1,0 +1,34 @@
+.input_login {
+  margin: auto;
+  width: 650px;
+  height: 500px;
+  border: solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.flexbox {
+  padding: 150px;
+}
+
+.input_box {
+  display: flex;
+  flex-direction: column;
+  border: blue solid;
+  text-align: center;
+  gap: 5px;
+}
+
+.input_box h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.inputs {
+  width: 500px;
+  height: 60px;
+  border-radius: 15px;
+  padding-left: 5px;
+}

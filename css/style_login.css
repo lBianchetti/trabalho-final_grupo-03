@@ -9,7 +9,7 @@ body {
   background-color: #030007;
   background-image: url(../img/filmes.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
 }
 
@@ -101,6 +101,7 @@ body {
   border: solid 1px;
   padding: 20px;
   margin-top: 15px;
+  outline: none;
 }
 
 #submit {
@@ -112,6 +113,15 @@ body {
   font-size: 25px;
   font-weight: bold;
   height: 50px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #F9FF55;
+}
+
+#submit:active {
+  transform: scale(0.98);
 }
 
 .input_box h1 {

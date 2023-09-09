@@ -1,0 +1,43 @@
+.warpper{
+    width:30%;
+    margin: auto;
+}
+
+input{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    color:#DDE316;
+    background-color:black;
+    border: 3px solid #DDE316;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+button{
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    border: 3px solid #DDE316;
+    border-radius: 25px;
+    background-color: #dce31656;
+}
+
+#posts-container {
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+}
+
+#posts-container h3{
+    padding-bottom: 20px;
+}
+
+#posts-container h4{
+    padding-top: 20px;
+}

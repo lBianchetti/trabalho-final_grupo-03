@@ -1,4 +1,4 @@
-let url = "http://www.omdbapi.com/?apikey=ef37334f&t="
+let url = "https://www.omdbapi.com/?apikey=ef37334f&t="
 let searchText = document.querySelector("#searchText")
 
 

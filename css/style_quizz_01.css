@@ -29,6 +29,7 @@
 .jogo__opcao{
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 
 .jogo__opcao__escolha{
@@ -36,6 +37,13 @@
     border-radius: 50px;
     color: #dce316;
     background-color: #dce31670;
+    vertical-align: middle;
+}
+
+p{
+    margin: auto;
+    padding-top: 15px;
+    vertical-align: middle;
 }
 
 .jogo__opcao__escolha:hover{
@@ -45,5 +53,21 @@
 
 .counter{
     text-align:right;
+}
+
+.errada{
+    background-color: red !important;
+}
+
+.errada:hover{
+    background-color: red !important;
+}
+
+.certa{
+    background-color: green !important;
+}
+
+.certa:hover{
+    background-color: green !important;
 }
 

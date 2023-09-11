@@ -10,19 +10,22 @@ body {
     background-color: #030007;
 }
 
-.background {
-    background-image: url(../img/cenas/mario-wallpaper.jpeg);
-    background-position: center;
-    background-size: 2000px;
+.background::before {
+    content: "";
     background-repeat: no-repeat;
-    height: 100%;
+    background-image: url('../img/cenas/mario-wallpaper.jpeg'); 
+    background-size: cover;
+    filter: blur(10px) opacity(60%);
+    position: absolute;
     width: 100%;
+    height: 102%;
+    z-index: -1;
 }
 
 .flexbox {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
 .flexbox__title h1 {
@@ -95,6 +98,10 @@ body {
     gap: 30px;
     margin-bottom: 15px;
     margin-top: 15px;
+}
+
+.tags h4 {
+    color: #DDE316;
 }
 
 .tags .tags__aventura, .tags__comedia, .tags__animacao{

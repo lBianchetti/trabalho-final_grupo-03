@@ -79,7 +79,10 @@ body {
 .ListaDeFilmes .ListaDeFilmes_Cabeçalho .ListaDeFilmes_Cabeçalho_Estrela {width: 15px;
 margin: 0;
 }
-.MenuFavoritos_Botoes_Tabela {color: #030007;};
+
+.MenuFavoritos_Botoes_Tabela {
+  color: #030007;
+}
 
 .pagination {
   margin-top: 20px;

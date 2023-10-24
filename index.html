@@ -19,14 +19,16 @@
     <section class="flexbox">
         <div class="input_login">
             <div class="input_box">
-                <h1>Acesse sua conta</h1>
+                <h1 id="title">Acesse sua Conta</h1>
                 <input type="text" placeholder="Nome de Usuário" autofocus class="inputs" id="user">
                 <input type="password" placeholder="Senha" class="inputs" id="password">
+                <div class="help">
+                    <p><a href="#" class="forgot">Esqueci a senha</a></p>
+                </div>
+                <input type="button" value="Cadastre-se" id="create" onclick="register()">
                 <input type="submit" value="Entrar" id="submit" onclick="verifyInputs()">
             </div>
         </div>
     </section>
 </body>
-<script>
-</script>
 </html>

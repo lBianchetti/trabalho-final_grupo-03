@@ -1,3 +1,6 @@
+let title = document.querySelector('#title');
+let login = 1;
+
 function verifyInputs() {
   let uservalue = document.querySelector('#user').value;
   let passwordvalue = document.querySelector('#password').value;
@@ -14,6 +17,7 @@ function verifyInputs() {
   if (passwordvalue == '') {
     password.style.borderColor = 'red'
   }
+
   else {
     password.style.borderColor = 'rgba(255, 255, 255, 0.7)'
   }

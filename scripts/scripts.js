@@ -1,6 +1,3 @@
-let title = document.querySelector('#title');
-let login = 1;
-
 function verifyInputs() {
   let uservalue = document.querySelector('#user').value;
   let passwordvalue = document.querySelector('#password').value;
@@ -20,5 +17,20 @@ function verifyInputs() {
 
   else {
     password.style.borderColor = 'rgba(255, 255, 255, 0.7)'
+  }
+}
+
+function showPassword() {
+  let passwordarea = document.querySelector('#password');
+  var eyeIcon = document.querySelector('.eye-icon')
+
+  if (passwordarea.type === 'password') {
+    passwordarea.type = 'text';
+    eyeIcon.classList.remove('bx-hide');
+            eyeIcon.classList.add('bx-show');
+  } else {
+    passwordarea.type = 'password';
+    eyeIcon.classList.remove('bx-show');
+            eyeIcon.classList.add('bx-hide');
   }
 }

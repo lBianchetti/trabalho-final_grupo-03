@@ -63,8 +63,8 @@ body {
 }
 
 .input_login {
-  margin: auto;
-  margin-top: 82px;
+  margin: 465px;
+  margin-top: 85px;
   width: 650px;
   height: 500px;
   display: flex;
@@ -73,6 +73,12 @@ body {
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.24);
   backdrop-filter: blur(100px);
+  position: absolute;
+}
+
+.input_login.signup {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .flexbox {
@@ -89,6 +95,15 @@ body {
 .input_box h1 {
   font-size: 50px;
   padding-bottom: 20px;
+}
+
+.eye-icon{
+  font-size: 22px;
+  color: #fff;
+  top: 230px;
+  right: 90px;
+  position: absolute;
+  cursor: pointer;
 }
 
 .inputs {

@@ -21,7 +21,7 @@
     <!--Login Form-->
 
     <section class="flexbox">
-        <div class="input_login login">
+        <div class="input_login">
             <div class="input_box">
                 <h1 id="title">Acesse sua Conta</h1>
                 <input type="text" placeholder="Nome de Usuário" autofocus class="inputs" id="user">
@@ -37,15 +37,14 @@
 
         <!--Signup Form-->
 
-        <div class="input_login signup">
+        <div class="input_signup hide">
             <div class="input_box">
                 <h1 id="title">Crie sua Conta</h1>
-                <input type="text" placeholder="Nome de Usuário" autofocus class="inputs" id="user">
-                <input type="password" placeholder="Senha" class="inputs" id="password">
-                <input type="password" placeholder="Senha" class="inputs" id="password">
-                <i class='bx bx-hide eye-icon' onclick="showPassword()"></i>
-                <input type="button" value="Cadastre-se" id="create" onclick="register()">
-                <input type="submit" value="Entrar" id="submit" onclick="verifyInputs()">
+                <input type="text" placeholder="Nome de Usuário" autofocus class="inputs" id="user_signup">
+                <input type="password" placeholder="Senha" class="inputs" id="password_signup">
+                <input type="password" placeholder="Senha" class="inputs" id="password_verify">
+                <input type="button" value="Login" id="create" onclick="register()">
+                <input type="submit" value="Criar conta" id="submit" onclick="verifyInputs()">
             </div>
         </div>
     </section>

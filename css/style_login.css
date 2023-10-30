@@ -76,7 +76,26 @@ body {
   position: absolute;
 }
 
-.input_login.signup {
+.input_login.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.input_signup {
+  margin: 465px;
+  margin-top: 85px;
+  width: 650px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(100px);
+  position: absolute;
+}
+
+.input_signup.hide {
   opacity: 0;
   pointer-events: none;
 }

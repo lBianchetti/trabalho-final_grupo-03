@@ -5,6 +5,7 @@ function verifyInputs() {
   if (uservalue !== '' && passwordvalue !== '') {
     window.location.href = 'main.html';
   }
+
   if (uservalue == '') {
     user.style.borderColor = 'red'
   }
@@ -22,7 +23,7 @@ function verifyInputs() {
 
 function showPassword() {
   let passwordarea = document.querySelector('#password');
-  var eyeIcon = document.querySelector('.eye-icon')
+  var eyeIcon = document.querySelector('.eye-icon');
 
   if (passwordarea.type === 'password') {
     passwordarea.type = 'text';
@@ -34,3 +35,19 @@ function showPassword() {
             eyeIcon.classList.add('bx-hide');
   }
 }
+
+function register() {
+  let form = document.querySelector('.input_login');
+  let signup = document.querySelector('.input_signup')
+  
+  if (form.classList.contains('hide')) {
+    form.classList.remove('hide');
+    signup.classList.add('hide')
+  }
+
+  else {
+    form.classList.add('hide');
+    signup.classList.remove('hide');
+  }
+}
+

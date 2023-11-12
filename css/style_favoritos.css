@@ -26,18 +26,6 @@ input{
   margin: auto;
 }
 
-.div__lista{
-  border: 2px solid white;
-
-  width: 60%;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .floating{
   padding: 30px;
 
@@ -50,4 +38,33 @@ input{
 
 .hidden{
   display: none;
+}
+
+.div__lista{
+  border: 2px solid white;
+  width: 60%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+.button__primary__md{
+  max-height: 50px;
+  order: 99;
+}
+
+.listaMenu{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.SalvarDiv{
+  margin: auto;
 }

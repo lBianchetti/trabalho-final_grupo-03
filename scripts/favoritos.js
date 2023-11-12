@@ -37,6 +37,8 @@ function RetrieveHtml() {
 
 function CreateBlock(nome){
     let newDiv = document.createElement('div')
+    let newDiv2 = document.createElement('div')
+
     newDiv.classList.add("div__lista")
 
     let newID = "div__" + nome
@@ -47,13 +49,17 @@ function CreateBlock(nome){
     let newH3 = document.createElement('h3')
     newH3.innerHTML = nome
 
+    newDiv2.classList.add("listaMenu")
+
     let newBtn = document.createElement("button")
     newBtn.textContent = "Adicionar Filme"
     newBtn.classList.add("button__primary__md")
     newBtn.setAttribute("onclick", "AdicionarFilme(this)")  
 
-    newDiv.appendChild(newH3)
-    newDiv.appendChild(newBtn)
+    newDiv2.appendChild(newH3)
+    newDiv2.appendChild(newBtn)
+
+    newDiv.appendChild(newDiv2)
 
     masterDiv.appendChild(newDiv)
 }
@@ -73,6 +79,7 @@ function AdicionarFilmeLista(nome){
     let thisLista = document.getElementById("div__" + localStorage.getItem('btnClick'))
 
     let divLista = document.createElement("div");
+    divLista.classList.add("poster")
     let posterLista = document.createElement("img");
 
     posterLista.setAttribute("src", localStorage.getItem('storedPosterSrc'))
@@ -99,7 +106,7 @@ async function getAllPosts(urls) {
     let response = await fetch(urls);
 
     let data = await response.json();
-
+    
     let div = document.createElement("div");
     let title = document.createElement("h3");
     let director = document.createElement("h4");

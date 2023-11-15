@@ -78,16 +78,37 @@ function AdicionarFilmeLista(nome){
 
     let thisLista = document.getElementById("div__" + localStorage.getItem('btnClick'))
 
+    let thisData = localStorage.getItem('data')
+    console.log(JSON.parse(thisData))
+
     let divLista = document.createElement("div");
     divLista.classList.add("poster")
     let posterLista = document.createElement("img");
-
     posterLista.setAttribute("src", localStorage.getItem('storedPosterSrc'))
-    
     divLista.appendChild(posterLista)
+
+    let infoLista = document.createElement("div");
+    let tituloLista = document.createElement("h3");
+    let anoLista = document.createElement("h5");
+    let diretorLista = document.createElement("h5");
+    let generoLista = document.createElement("h5");
+    let plotLista = document.createElement("p");
+
+    tituloLista.innerText = JSON.parse(thisData).Title
+    anoLista.innerText = JSON.parse(thisData).Year
+    diretorLista.innerText = JSON.parse(thisData).Director
+    generoLista.innerText = JSON.parse(thisData).Genre
+    plotLista.innerText = JSON.parse(thisData).Plot
+
+    infoLista.appendChild(tituloLista)
+    infoLista.appendChild(anoLista)
+    infoLista.appendChild(diretorLista)
+    infoLista.appendChild(generoLista)
+    infoLista.appendChild(plotLista)
+
+    divLista.appendChild(infoLista)
+
     thisLista.appendChild(divLista)
-
-
 }
 
 
@@ -107,6 +128,8 @@ async function getAllPosts(urls) {
 
     let data = await response.json();
     
+    localStorage.setItem('data', JSON.stringify(data));
+
     let div = document.createElement("div");
     let title = document.createElement("h3");
     let director = document.createElement("h4");

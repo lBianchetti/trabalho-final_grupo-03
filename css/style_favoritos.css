@@ -66,5 +66,12 @@ input{
 }
 
 .SalvarDiv{
+  position: fixed;
+  top: 90%;
+  left: 45%;
   margin: auto;
+}
+
+.poster{
+  display: flex;
 }

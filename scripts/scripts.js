@@ -1,23 +1,75 @@
+window.onload = function() {
+  localStorage.removeItem("Login");
+  localStorage.removeItem("Password");
+}
+
 function verifyInputs() {
   let uservalue = document.querySelector('#user').value;
   let passwordvalue = document.querySelector('#password').value;
 
-  if (uservalue !== '' && passwordvalue !== '') {
+  if (uservalue == localStorage.getItem("Login") && passwordvalue == localStorage.getItem("Password")) {
     window.location.href = 'main.html';
   }
 
-  if (uservalue == '') {
+  if (localStorage.getItem("Login") == null && localStorage.getItem("Password") == null) {
+    window.alert("Você ainda não possui uma conta.");
+    document.querySelector('#user').value = '';
+    document.querySelector('#password').value = '';
+  }
+
+  if (uservalue == '' || uservalue !== localStorage.getItem("Login")) {
     user.style.borderColor = 'red'
   }
   else {
     user.style.borderColor = 'rgba(255, 255, 255, 0.7)'
   }
-  if (passwordvalue == '') {
+  if (passwordvalue == '' || passwordvalue !== localStorage.getItem("Password")) {
     password.style.borderColor = 'red'
   }
 
   else {
     password.style.borderColor = 'rgba(255, 255, 255, 0.7)'
+  }
+}
+
+function verifyInputsSign() {
+  var username = document.querySelector('#user_signup').value;
+  var passwordcreate = document.querySelector('#password_signup').value;
+  var passwordcheck = document.querySelector('#password_verify').value;
+
+  if (username !== '' && passwordcreate !== '' && passwordcheck == passwordcreate) {
+    var login = localStorage.setItem("Login", username);
+    var pass = localStorage.setItem("Password", passwordcheck);
+    window.alert('Conta criada com sucesso.')
+    document.querySelector('#user_signup').value = '';
+    document.querySelector('#password_signup').value = '';
+    document.querySelector('#password_verify').value = '';
+  }
+
+  if (username !== '' && passwordcheck !== passwordcreate) {
+    window.alert('As senhas não são iguais.')
+    document.querySelector('#password_verify').value = '';
+  }
+
+  if (username == '') {
+    user_signup.style.borderColor = 'red'
+  }
+  else {
+    user_signup.style.borderColor = 'rgba(255, 255, 255, 0.7)'
+  }
+  if (passwordcreate == '') {
+    password_signup.style.borderColor = 'red'
+  }
+
+  else {
+    password_signup.style.borderColor = 'rgba(255, 255, 255, 0.7)'
+  }
+  if (passwordcheck == '') {
+    password_verify.style.borderColor = 'red'
+  }
+
+  else {
+    password_verify.style.borderColor = 'rgba(255, 255, 255, 0.7)'
   }
 }
 
@@ -42,7 +94,12 @@ function register() {
   
   if (form.classList.contains('hide')) {
     form.classList.remove('hide');
-    signup.classList.add('hide')
+    signup.classList.add('hide');
+    document.querySelector('#user').value = '';
+    document.querySelector('#password').value = '';
+    document.querySelector('#user_signup').value = '';
+    document.querySelector('#password_signup').value = '';
+    document.querySelector('#password_verify').value = '';
   }
 
   else {

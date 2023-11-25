@@ -10,7 +10,7 @@ function Lista(nome) {
     this.filmes = []
 }
 
-function AdicionarFilme(button){
+function AdicionarFilme(button) {
     console.log("filme add")
     searchBox.classList.remove("hidden")
 
@@ -20,7 +20,7 @@ function AdicionarFilme(button){
     localStorage.setItem('btnClick', h3Text);
 }
 
-function Save(button){
+function Save(button) {
     let myDiv = document.getElementById('div');
     let divHtml = myDiv.innerHTML;
     localStorage.setItem('cachedHtml', divHtml);
@@ -30,12 +30,12 @@ function RetrieveHtml() {
     let cachedHtml = localStorage.getItem('cachedHtml');
 
     if (cachedHtml) {
-      let container = document.getElementById("div");
-      container.innerHTML = cachedHtml;
+        let container = document.getElementById("div");
+        container.innerHTML = cachedHtml;
     }
 }
 
-function CreateBlock(nome){
+function CreateBlock(nome) {
     let newDiv = document.createElement('div')
     let newDiv2 = document.createElement('div')
 
@@ -54,10 +54,17 @@ function CreateBlock(nome){
     let newBtn = document.createElement("button")
     newBtn.textContent = "Adicionar Filme"
     newBtn.classList.add("button__primary__md")
-    newBtn.setAttribute("onclick", "AdicionarFilme(this)")  
+    newBtn.setAttribute("onclick", "AdicionarFilme(this)")
+
+    let newBtn2 = document.createElement("button")
+    newBtn2.textContent = "Excluir Lista"
+    newBtn2.classList.add("button__secondary__md")
+    newBtn2.setAttribute("onclick", "ExcluirLista(this)")
 
     newDiv2.appendChild(newH3)
+    newDiv2.appendChild(newBtn2)
     newDiv2.appendChild(newBtn)
+
 
     newDiv.appendChild(newDiv2)
 
@@ -65,7 +72,7 @@ function CreateBlock(nome){
 }
 
 
-function NovaLista(){
+function NovaLista() {
     const lista1 = new Lista(nomeLista.value);
     console.log(lista1)
     localStorage.setItem('nome', lista1.nome);
@@ -73,7 +80,7 @@ function NovaLista(){
 }
 
 
-function AdicionarFilmeLista(nome){
+function AdicionarFilmeLista(nome) {
     searchBox.classList.add("hidden")
 
     let thisLista = document.getElementById("div__" + localStorage.getItem('btnClick'))
@@ -94,6 +101,11 @@ function AdicionarFilmeLista(nome){
     let generoLista = document.createElement("h5");
     let plotLista = document.createElement("p");
 
+    let btnExcluirFilme = document.createElement("button")
+    btnExcluirFilme.textContent = "Excluir Filme"
+    btnExcluirFilme.classList.add("button__secondary__md")
+    btnExcluirFilme.setAttribute("onclick", "ExcluirFilme(this)")
+
     tituloLista.innerText = JSON.parse(thisData).Title
     anoLista.innerText = JSON.parse(thisData).Year
     diretorLista.innerText = JSON.parse(thisData).Director
@@ -105,13 +117,25 @@ function AdicionarFilmeLista(nome){
     infoLista.appendChild(diretorLista)
     infoLista.appendChild(generoLista)
     infoLista.appendChild(plotLista)
+    infoLista.appendChild(btnExcluirFilme)
+
 
     divLista.appendChild(infoLista)
 
     thisLista.appendChild(divLista)
 }
 
+function ExcluirFilme(button) {
+    let parentDiv2 = button.parentElement;
+    parentDiv2.parentElement.remove()
 
+}
+
+function ExcluirLista(button) {
+    let parentDiv3 = button.parentElement;
+    parentDiv3.parentElement.remove()
+
+}
 
 //Pesquisar
 
@@ -127,7 +151,7 @@ async function getAllPosts(urls) {
     let response = await fetch(urls);
 
     let data = await response.json();
-    
+
     localStorage.setItem('data', JSON.stringify(data));
 
     let div = document.createElement("div");
@@ -156,7 +180,7 @@ async function getAllPosts(urls) {
 }
 
 
-function search(){
+function search() {
     apagar();
     let searchQuerry = searchText.value;
     let urls = url + searchQuerry;
@@ -164,7 +188,7 @@ function search(){
     searchText.value = "";
 }
 
-function apagar(){
+function apagar() {
     postsContainer.innerHTML = "";
 }
 

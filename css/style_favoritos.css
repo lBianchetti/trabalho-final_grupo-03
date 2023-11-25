@@ -29,9 +29,10 @@ input{
 .floating{
   padding: 30px;
 
-  position: absolute;
+  position: fixed;
   top: 30%;
-  left: 30%;
+  left: 50%;
+  transform:translateX(-50%);
   margin: auto;
   background-color: #dce31693;
 }

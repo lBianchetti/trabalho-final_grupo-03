@@ -1,8 +1,3 @@
-window.onload = function() {
-  localStorage.removeItem("Login");
-  localStorage.removeItem("Password");
-}
-
 function verifyInputs() {
   let uservalue = document.querySelector('#user').value;
   let passwordvalue = document.querySelector('#password').value;
@@ -40,15 +35,24 @@ function verifyInputsSign() {
   if (username !== '' && passwordcreate !== '' && passwordcheck == passwordcreate) {
     var login = localStorage.setItem("Login", username);
     var pass = localStorage.setItem("Password", passwordcheck);
-    window.alert('Conta criada com sucesso.')
+    let form = document.querySelector('.input_login');
+    let signup = document.querySelector('.input_signup')
     document.querySelector('#user_signup').value = '';
     document.querySelector('#password_signup').value = '';
     document.querySelector('#password_verify').value = '';
+
+    window.alert('Conta criada com sucesso.');
+    signup.classList.add('hide');
+    form.classList.remove('hide');
   }
 
   if (username !== '' && passwordcheck !== passwordcreate) {
     window.alert('As senhas não são iguais.')
     document.querySelector('#password_verify').value = '';
+  }
+
+  if (username == '' || passwordcreate == '') {
+    window.alert('Preencha todos os campos')
   }
 
   if (username == '') {
@@ -108,3 +112,14 @@ function register() {
   }
 }
 
+function forgotpass() {
+  let forgotuser = localStorage.getItem("Login");
+  let forgotpassword = localStorage.getItem("Password");
+
+    if (localStorage.getItem("Login") == null && localStorage.getItem("Password") == null) {
+      window.alert("Você ainda não possui uma conta.");
+    }
+    else {
+      window.alert('Usuário: ' + forgotuser + '\nSenha: ' + forgotpassword);
+    }
+  }

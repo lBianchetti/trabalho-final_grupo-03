@@ -104,7 +104,10 @@ function AdicionarFilmeLista(nome) {
     let btnExcluirFilme = document.createElement("button")
     btnExcluirFilme.textContent = "Excluir Filme"
     btnExcluirFilme.classList.add("button__secondary__md")
+    btnExcluirFilme.classList.add("btnExcluir")
     btnExcluirFilme.setAttribute("onclick", "ExcluirFilme(this)")
+
+    infoLista.classList.add("infos")
 
     tituloLista.innerText = JSON.parse(thisData).Title
     anoLista.innerText = JSON.parse(thisData).Year
@@ -155,13 +158,13 @@ async function getAllPosts(urls) {
     localStorage.setItem('data', JSON.stringify(data));
 
     let div = document.createElement("div");
-    let title = document.createElement("h3");
-    let director = document.createElement("h4");
+    // let title = document.createElement("h3");
+    // let director = document.createElement("h4");
     let poster = document.createElement("img");
     let button = document.createElement("button");
 
-    title.innerText = data.Title;
-    director.innerText = "diretor: " + data.Director;
+    // title.innerText = data.Title;
+    // director.innerText = "diretor: " + data.Director;
     poster.setAttribute("src", data.Poster)
 
     button.textContent = "Adicionar Filme"
@@ -171,9 +174,9 @@ async function getAllPosts(urls) {
     let posterSrc = poster.src
     localStorage.setItem('storedPosterSrc', posterSrc);
 
-    div.appendChild(title)
+    // div.appendChild(title)
     div.appendChild(poster)
-    div.appendChild(director)
+    // div.appendChild(director)
     div.appendChild(button)
 
     postsContainer.appendChild(div)

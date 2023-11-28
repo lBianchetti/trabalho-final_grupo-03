@@ -7,41 +7,42 @@ body {
   background-color: #030007;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.space__between{
+.space__between {
   justify-content: space-between;
 }
 
-input{
+input {
   color: blue;
 }
 
-.main__container{
+.main__container {
   padding-top: 200px;
   padding-bottom: 20vh;
   width: 60svw;
   margin: auto;
 }
 
-.floating{
+.floating {
   padding: 30px;
 
   position: fixed;
   top: 30%;
   left: 50%;
-  transform:translateX(-50%);
+  transform: translateX(-50%);
   margin: auto;
-  background-color: #dce31693;
+  background-color: #8017E3;
+  border-radius: 50px;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.div__lista{
+.div__lista {
   border: 2px solid white;
   width: 60%;
   padding: 20px;
@@ -52,43 +53,45 @@ input{
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
+  border-radius: 40px;
+  overflow: hidden;
 }
 
 
-.button__primary__md{
+.button__primary__md {
   max-height: 50px;
   order: 99;
 }
 
-.listaMenu{
+.listaMenu {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
-.SalvarDiv{
+.SalvarDiv {
   position: fixed;
   top: 90%;
   left: 45%;
   margin: auto;
 }
 
-.poster{
+.poster {
   display: flex;
 }
 
-.search{
-      background-color: #DDE316;
-                              color: #030007;
-                              padding: 16px 24px;
-                              border: none;
-                              border-radius: 500px;
-                              cursor: pointer;
-                              font-size: 1rem;
-                              font-style: normal;
-                              font-weight: 600;
-                              line-height: 100%;
-                              text-decoration: none;
+.search {
+  background-color: #DDE316;
+  color: #030007;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  text-decoration: none;
 }
 
 #listName {
@@ -104,15 +107,78 @@ input{
   outline: none;
 }
 
-#searchText{
-    width: 500px;
-    height: 55px;
-    border-radius: 30px;
-    padding-left: 5px;
-    color: rgba(255, 255, 255, 0.7);
-    background-color: #000;
-    border: solid 1px;
-    padding: 20px;
-    margin-top: 10px;
-    outline: none;
+#searchText {
+  width: 500px;
+  height: 55px;
+  border-radius: 30px;
+  padding-left: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #000;
+  border: solid 1px;
+  padding: 20px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.listaMenu{
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.listaMenu::before{
+  content:"";
+  position: absolute;
+  width: 59.9%;
+  transform: translate(-32px, 80px);
+  border-bottom: 2px solid white;
+}
+
+h3{
+  transform: translate(0, 10px);
+}
+
+.btnExcluir{
+float: right;
+margin-top: -80px;
+}
+
+h5{
+  color:#4d4d4d;
+}
+
+.infos{
+ padding: 20px; 
+ width: 100%;
+}
+
+.infos h5 {
+  display: inline;
+  margin-right: 40px;
+}
+
+.infos h5::after {
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #4d4d4d;
+  transform: translate(15px, 5px);
+}
+
+.poster{
+  height: 150px;
+}
+
+#posts-container div{
+  padding: 50px;
+  display: block;
+}
+
+#posts-container div button{
+  transform: translate(60px);
+}
+
+.infos p{
+  width: 80%;
 }

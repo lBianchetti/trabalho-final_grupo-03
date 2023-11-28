@@ -12,8 +12,19 @@ body {
     padding: 2px;
 }
 
-.hero__img{
+.hero{
+    z-index: -10;
     width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.hero__img{
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
 }
 
 .profile {
